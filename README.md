@@ -31,4 +31,4 @@ I'll add and update my class assignments here throughout the semester.
 
 ## AI Acknowledgements
 
-I used ChatGPT to help draft and organize the text for this portfolio homepage.
+
