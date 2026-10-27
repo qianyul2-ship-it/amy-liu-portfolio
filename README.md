@@ -31,4 +31,8 @@ I'll add and update my class assignments here throughout the semester.
 
 ## AI Acknowledgements
 
+## A Little Something Fun
 
+![Funny dog photo](funny-dog-unsplash.jpg)
+
+> Photo by [charlesdeluvio](https://unsplash.com/pt-br/@charlesdeluvio) on [Unsplash](https://unsplash.com/photos/K4mSJ7kc0As).
