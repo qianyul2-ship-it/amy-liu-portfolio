@@ -8,6 +8,12 @@ I selected the **Taylor Swift Tours** dataset and visualization featured in the 
 
 **Original MakeoverMonday source:** [Taylor Swift Tours dataset and visualization](https://makeovermonday.vercel.app/dataset/taylor-swift-tours)
 
+### Original visualization
+
+![Original Taylor Swift albums and tours visualization](images/taylor-swift-original.png)
+
+*Figure 1. Original visualization from the MakeoverMonday Taylor Swift Tours dataset page. Source: MakeoverMonday (2026/W35); original graphic credited to A Dash of Data.*
+
 
 
 I selected this visualization because the story is accessible and interesting even for readers who are not deeply familiar with Taylor Swift's career. The relationship between album releases and tours is inherently temporal, making it a useful opportunity to evaluate how visual placement communicates elapsed time. I wanted to retain the author's narrative about the unusual buildup to The Eras Tour while exploring whether the same information could be understood more quickly.
@@ -27,6 +33,8 @@ The title also goes beyond what the timeline can establish on its own. Album and
 My initial concept was a **dual-track, time-proportional horizontal timeline**: album releases above, tours below, both using the same continuous date scale. Equal distances on the horizontal axis would represent equal periods of time. Album-specific colors would preserve some of the personality of the original, while a highlighted interval would direct attention to the break between tours.
 
 I also considered a more traditional timeline and an album-composition chart. I ultimately preferred the dual-track layout because it preserves the original purpose and enables a direct comparison of album releases with touring activity.
+
+### Initial redesign sketch
 
 **Initial concept sketch:** The digital sketch below was generated with ChatGPT based on my proposed dual-track, time-proportional layout. It includes two tracks, a highlighted touring gap, and explanatory callouts. The final Tableau design simplifies this initial composition.
 
@@ -65,7 +73,7 @@ I added a **reference band from November 21, 2018 to March 17, 2023**, showing t
 
 ![Final Taylor Swift Albums and Tours Timeline created in Tableau](images/taylor-swift-tableau-final.png)
 
-*Figure 2. Final Tableau redesign showing album release dates, tour durations, and the highlighted interval before The Eras Tour.*
+*Figure 3. Final Tableau redesign showing album release dates, tour durations, and the highlighted interval before The Eras Tour.*
 
 **Interactive version:** [Explore the Tableau Public dashboard](https://public.tableau.com/app/profile/qianyu.liu/viz/TaylorSwiftToursRedesign/Dashboard1).
 
