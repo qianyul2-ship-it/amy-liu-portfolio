@@ -22,7 +22,7 @@ I'll add and update my class assignments here throughout the semester.
 [Data Visualization Examples](dataviz-examples)
 
 ### Critique by Design
-[Critique by Design](critique-by-design.html)
+[Critique by Design](critique-by-design)
 
 ### Final Project
 - [Part I](final-project-part-one)
