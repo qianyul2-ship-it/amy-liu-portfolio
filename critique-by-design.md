@@ -30,7 +30,6 @@ I also considered a more traditional timeline and an album-composition chart. I 
 
 ![Initial concept sketch of Taylor Swift album and tour timelines](images/taylor-swift-timeline-sketch.png)
 
-*Image upload pending: add the supplied sketch PNG at `images/taylor-swift-timeline-sketch.png` so it displays here.*
 
 ## Step four: Test the solution
 
