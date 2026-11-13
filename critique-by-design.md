@@ -4,9 +4,11 @@
 
 ## Step one: Choose a visualization
 
-I chose a Taylor Swift album and touring timeline featured in the MakeoverMonday **2026/W35: Taylor Swift Tours** challenge. The visualization originally appeared in Alice Zhao's *A Data Scientist Breaks Down All 10 Taylor Swift Albums* (March 2023), in a section discussing anticipation for The Eras Tour.
+I selected the **Taylor Swift Tours** dataset and visualization featured in the MakeoverMonday **2026/W35** challenge. The MakeoverMonday dataset page was my starting point for the assignment. For additional context about the original Eras Tour narrative, I also consulted Alice Zhao's March 2023 article discussing Taylor Swift's album and touring history.
 
-[Original article and visualization](https://adashofdata.com/2023/03/01/a-data-scientist-breaks-down-all-10-taylor-swift-albums-the-extended-version/)
+**Original MakeoverMonday source:** [Taylor Swift Tours dataset and visualization](https://makeovermonday.vercel.app/dataset/taylor-swift-tours)
+
+**Contextual article:** [Alice Zhao, *A Data Scientist Breaks Down All 10 Taylor Swift Albums*](https://adashofdata.com/2023/03/01/a-data-scientist-breaks-down-all-10-taylor-swift-albums-the-extended-version/)
 
 I selected this visualization because the story is accessible and interesting even for readers who are not deeply familiar with Taylor Swift's career. The relationship between album releases and tours is inherently temporal, making it a useful opportunity to evaluate how visual placement communicates elapsed time. I wanted to retain the author's narrative about the unusual buildup to The Eras Tour while exploring whether the same information could be understood more quickly.
 
@@ -65,7 +67,7 @@ The most important change from the original is the use of **position and distanc
 
 ## References
 
-- [MakeoverMonday, 2026/W35: Taylor Swift Tours](https://makeovermonday.co.uk/)
+- [MakeoverMonday, 2026/W35: Taylor Swift Tours (original dataset and visualization)](https://makeovermonday.vercel.app/dataset/taylor-swift-tours)
 - [Alice Zhao, *A Data Scientist Breaks Down All 10 Taylor Swift Albums (The Extended Version)*, March 1, 2023](https://adashofdata.com/2023/03/01/a-data-scientist-breaks-down-all-10-taylor-swift-albums-the-extended-version/)
 - Scott Berinato, *Good Charts*, Chapters 3–4.
 - Stephen Few, *Data Visualization Effectiveness Profile*.
