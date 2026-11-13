@@ -8,7 +8,7 @@ I selected the **Taylor Swift Tours** dataset and visualization featured in the 
 
 **Original MakeoverMonday source:** [Taylor Swift Tours dataset and visualization](https://makeovermonday.vercel.app/dataset/taylor-swift-tours)
 
-**Contextual article:** [Alice Zhao, *A Data Scientist Breaks Down All 10 Taylor Swift Albums*](https://adashofdata.com/2023/03/01/a-data-scientist-breaks-down-all-10-taylor-swift-albums-the-extended-version/)
+
 
 I selected this visualization because the story is accessible and interesting even for readers who are not deeply familiar with Taylor Swift's career. The relationship between album releases and tours is inherently temporal, making it a useful opportunity to evaluate how visual placement communicates elapsed time. I wanted to retain the author's narrative about the unusual buildup to The Eras Tour while exploring whether the same information could be understood more quickly.
 
