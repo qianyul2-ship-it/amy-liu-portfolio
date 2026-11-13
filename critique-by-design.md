@@ -85,7 +85,6 @@ The most important change from the original is the use of **position and distanc
 - [Alice Zhao, *A Data Scientist Breaks Down All 10 Taylor Swift Albums (The Extended Version)*, March 1, 2023](https://adashofdata.com/2023/03/01/a-data-scientist-breaks-down-all-10-taylor-swift-albums-the-extended-version/)
 - Scott Berinato, *Good Charts*, Chapters 3–4.
 - Stephen Few, *Data Visualization Effectiveness Profile*.
-- Taylor Swift studio album release dates: [Add the specific reference consulted for the supplementary dates.]
 
 ## AI acknowledgements
 
