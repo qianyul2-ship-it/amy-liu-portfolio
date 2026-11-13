@@ -18,6 +18,8 @@ I selected the **Taylor Swift Tours** dataset and visualization featured in the 
 
 I selected this visualization because the story is accessible and interesting even for readers who are not deeply familiar with Taylor Swift's career. The relationship between album releases and tours is inherently temporal, making it a useful opportunity to evaluate how visual placement communicates elapsed time. I wanted to retain the author's narrative about the unusual buildup to The Eras Tour while exploring whether the same information could be understood more quickly.
 
+**My thinking at this stage.** At first, I was drawn to the story itself: several album releases preceded one much-anticipated tour. As I examined the graphic, I began asking a more specific design question: *Can someone see how long the break in touring lasted without having to read and subtract dates?* That question gave me a concrete criterion for choosing the visualization and a direction for the critique.
+
 ## Step two: Critique the original
 
 I used Stephen Few's *Data Visualization Effectiveness Profile* to consider usefulness, completeness, perceptibility, truthfulness, intuitiveness, aesthetics, and engagement. I also applied the framework from Chapter 3 of *Good Charts*. I would classify the original as **data-driven and declarative**: it uses specific album and tour dates to communicate a preselected narrative about the anticipation surrounding The Eras Tour.
@@ -30,11 +32,15 @@ The title also goes beyond what the timeline can establish on its own. Album and
 
 Reflecting on Stephen Few's *Data Visualization Effectiveness Profile*, I found it useful for moving beyond personal aesthetic preferences to evaluate how effectively the chart communicates information. In particular, **perceptibility** helped me identify why the length of the touring gap was difficult to judge, while **truthfulness** prompted me to question how strongly the visualization's title was supported by the available data. At the same time, the method has limitations: it does not fully capture the emotional appeal of a visualization designed for Taylor Swift fans. The original chart's album-inspired colors and narrative framing can engage that audience even if its time encoding could be clearer. This suggests that an effective redesign should improve analytical clarity while retaining elements that make the story recognizable and compelling to its intended viewers.
 
+**How the critique changed my direction.** I initially noticed the chart's engaging colors and narrative, but the effectiveness profile pushed me to look beyond visual appeal. The central weakness became clearer: the elapsed time between tours was an essential part of the story, yet readers had to reconstruct it themselves. I decided to make chronological distance visible through position on a continuous time scale, while keeping the original audience and color associations in mind.
+
 ## Step three: Sketch a solution
 
 My initial concept was a **dual-track, time-proportional horizontal timeline**: album releases above, tours below, both using the same continuous date scale. Equal distances on the horizontal axis would represent equal periods of time. Album-specific colors would preserve some of the personality of the original, while a highlighted interval would direct attention to the break between tours.
 
 I also considered a more traditional timeline and an album-composition chart. I ultimately preferred the dual-track layout because it preserves the original purpose and enables a direct comparison of album releases with touring activity.
+
+**How I made the sketching decision.** I first considered placing every event on one timeline, but that risked mixing album launches with tours and making labels harder to follow. A composition chart would have shifted attention toward songs or album content instead of elapsed time. Separating releases and tours into aligned tracks seemed like the clearest way to preserve both kinds of information. The first sketch intentionally included prominent labels and explanatory annotations so classmates could understand the proposed story and respond to it; I treated those elements as design choices to test, not final decisions.
 
 ### Initial redesign sketch
 
@@ -61,7 +67,11 @@ During our in-class critique, my classmates offered several specific suggestions
 
 The feedback helped me recognize that simplicity and accuracy have to work together. Removing repeated visual elements made the composition cleaner, but an equally important improvement was choosing the right mark type for each event: circles for one-day releases and duration bars for tours. Aligning the tracks on the same date scale and emphasizing the touring gap made the main story easier to perceive without asking readers to calculate intervals themselves.
 
+**My turning point after testing.** The repeated timelines initially seemed helpful because they made each part of the sketch self-contained. The feedback showed me how that repetition competed with the main message. The point-versus-duration issue also changed the way I thought about the data: a tour occupies an interval, whereas an album release occurs on a date. Those observations led me to simplify the axes and text while replacing point markers for tours with duration bars in Tableau.
+
 ## Step five: Build the solution in Tableau
+
+**Moving from concept to implementation.** When I started building in Tableau, I needed the chart to reflect the feedback rather than simply reproduce the sketch. I kept two aligned tracks, selected circles for releases and Gantt bars for tours, and checked that both used the same date range. This was also when I had to examine the source fields more closely: an attractive mockup was insufficient if the underlying dates could not support it.
 
 I built the final redesign in **Tableau Public**, retaining the two horizontal tracks with a shared proportional date range. The upper track uses colored circles for studio-album release dates, and the lower track uses Gantt bars to show tour durations. Text labels identify tours, while the color legend identifies albums.
 
@@ -80,6 +90,10 @@ I added a **reference band from November 21, 2018 to March 17, 2023**, showing t
 **Interactive version:** [Explore the Tableau Public dashboard](https://public.tableau.com/app/profile/qianyu.liu/viz/TaylorSwiftToursRedesign/Dashboard1).
 
 The most important change from the original is the use of **position and distance as explicit encodings of time**. The result is intended to help viewers perceive the gap directly and identify the four releases that preceded The Eras Tour. It offers historical context for anticipation while avoiding claims of causation that the underlying data cannot independently verify.
+
+### Final reflection
+
+Looking back across the five stages, my understanding of the problem became more precise. I began with a broad concern about whether the original timeline communicated its story clearly. The critique turned that concern into a specific issue with perceived time gaps; the sketch tested a dual-track layout; classroom discussion exposed redundancy and a mismatch between point markers and tour durations; and the Tableau build required me to resolve actual data limitations, including missing release dates and inconsistent tour dates. I learned that improving a visualization involves both choosing encodings that fit the data and removing elements that compete with the key comparison. I would still want to test the finished dashboard with new viewers before claiming that it improves reading speed or comprehension.
 
 ## References
 
