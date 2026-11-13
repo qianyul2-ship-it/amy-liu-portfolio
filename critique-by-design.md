@@ -33,13 +33,22 @@ I also considered a more traditional timeline and an album-composition chart. I 
 
 ## Step four: Test the solution
 
-During the in-class critique, a specific piece of feedback on my digital sketch was that **the timeline appeared multiple times**, creating unnecessary repetition. The sketch included an album line, a tour line, and an additional year scale at the bottom. Although each element served a purpose, repeating the timeline made the overall layout feel more complicated and could distract viewers from the central comparison.
+A specific piece of feedback during the classroom critique was that **the timeline appeared multiple times** in my initial sketch. The sketch repeated the time scale across the album and tour tracks and again at the bottom, which added visual redundancy. This made me reconsider whether every axis and annotation was helping readers identify the main point.
 
-My response was to simplify the composition in Tableau. I retained the two meaningful data tracks, used a consistent continuous date scale, and removed the redundant third timeline. I also separated album releases (colored points) from tours (duration bars), so the two event types could be compared without relying on multiple repeated timelines. I used a reference band on both tracks to emphasize the interval between the Reputation Tour and The Eras Tour.
+While reviewing my sketch against the source data, I identified another important issue: **an album release happens on a particular date, but a tour extends over a period of time**. My initial sketch represented both with point markers. This simplified the composition but hid the duration of tours, which is relevant to understanding the gap before The Eras Tour.
 
-**Other peer responses:** [Add anonymized individual comments only if recorded or recalled from the classroom test. Do not include participants' names.]
+I also evaluated a few additional design challenges while refining the visualization. Showing every album name next to its marker caused crowding, particularly around *folklore* and *evermore* in 2020. Keeping both color legends helped identify albums and tours, while adding a reference band made the touring gap more immediately visible.
 
-**Synthesis:** The confirmed feedback reinforced a practical design trade-off: supplementary labels and axes can aid explanation, but repetition can weaken visual hierarchy. I prioritized a simpler, more readable presentation of the same chronological story.
+### Feedback and design responses
+
+| Observation | How I responded in the redesign |
+| --- | --- |
+| **Peer feedback:** The timeline is repeated too many times. | Reduced redundant timeline elements and aligned the two tracks using the same proportional date range. |
+| **My own data-encoding observation:** Tours have a duration, while album releases occur on a single date. | Used Gantt bars for tour start-to-end periods and circles for album release dates. |
+| **My own readability observation:** Album labels became crowded around closely spaced releases. | Removed on-mark album labels and retained an album color legend. |
+| **My own narrative observation:** The touring gap needed to stand out. | Added a reference band highlighting the period between the Reputation Tour's end and The Eras Tour's start. |
+
+**Synthesis:** I learned that simplifying a visualization requires careful decisions about what each visual element represents. The final design reduces repetition while preserving meaningful temporal information. The use of different marks for single-date events and extended events makes the comparison more precise.
 
 ## Step five: Build the solution in Tableau
 
