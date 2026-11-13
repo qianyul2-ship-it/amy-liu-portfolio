@@ -28,6 +28,8 @@ My central concern was **the perceptibility of elapsed time**. The story depends
 
 The title also goes beyond what the timeline can establish on its own. Album and tour histories provide plausible context for anticipation, but these data alone cannot measure ticket demand or prove its causes. In my redesign I therefore aim to make the *timeline evidence* more persuasive visually, while keeping this analytical limitation clear.
 
+Reflecting on Stephen Few's *Data Visualization Effectiveness Profile*, I found it useful for moving beyond personal aesthetic preferences to evaluate how effectively the chart communicates information. In particular, **perceptibility** helped me identify why the length of the touring gap was difficult to judge, while **truthfulness** prompted me to question how strongly the visualization's title was supported by the available data. At the same time, the method has limitations: it does not fully capture the emotional appeal of a visualization designed for Taylor Swift fans. The original chart's album-inspired colors and narrative framing can engage that audience even if its time encoding could be clearer. This suggests that an effective redesign should improve analytical clarity while retaining elements that make the story recognizable and compelling to its intended viewers.
+
 ## Step three: Sketch a solution
 
 My initial concept was a **dual-track, time-proportional horizontal timeline**: album releases above, tours below, both using the same continuous date scale. Equal distances on the horizontal axis would represent equal periods of time. Album-specific colors would preserve some of the personality of the original, while a highlighted interval would direct attention to the break between tours.
