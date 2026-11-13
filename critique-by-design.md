@@ -26,15 +26,21 @@ My initial concept was a **dual-track, time-proportional horizontal timeline**: 
 
 I also considered a more traditional timeline and an album-composition chart. I ultimately preferred the dual-track layout because it preserves the original purpose and enables a direct comparison of album releases with touring activity.
 
-**Initial concept sketch:** [Add the digital sketch image here.]
+**Initial concept sketch:** The digital sketch below was generated with ChatGPT based on my proposed dual-track, time-proportional layout. It includes two tracks, a highlighted touring gap, and explanatory callouts. The final Tableau design simplifies this initial composition.
+
+![Initial concept sketch of Taylor Swift album and tour timelines](images/taylor-swift-timeline-sketch.png)
+
+*Image upload pending: add the supplied sketch PNG at `images/taylor-swift-timeline-sketch.png` so it displays here.*
 
 ## Step four: Test the solution
 
-In class, our group discussed a recurring design challenge: simplifying a visualization without discarding context that readers need. We considered how excessive labels, colors, and other details can compete with the main message, and how spacing, alignment, and visual hierarchy can help.
+During the in-class critique, a specific piece of feedback on my digital sketch was that **the timeline appeared multiple times**, creating unnecessary repetition. The sketch included an album line, a tour line, and an additional year scale at the bottom. Although each element served a purpose, repeating the timeline made the overall layout feel more complicated and could distract viewers from the central comparison.
 
-**Individual peer feedback:** [Add anonymized notes from each person who tested this specific sketch. Include what they understood without explanation, what confused them, and suggested changes.]
+My response was to simplify the composition in Tableau. I retained the two meaningful data tracks, used a consistent continuous date scale, and removed the redundant third timeline. I also separated album releases (colored points) from tours (duration bars), so the two event types could be compared without relying on multiple repeated timelines. I used a reference band on both tracks to emphasize the interval between the Reputation Tour and The Eras Tour.
 
-**What changed after testing:** [Specify which changes were directly motivated by the peer feedback above. Keep these distinct from your own design decisions.]
+**Other peer responses:** [Add anonymized individual comments only if recorded or recalled from the classroom test. Do not include participants' names.]
+
+**Synthesis:** The confirmed feedback reinforced a practical design trade-off: supplementary labels and axes can aid explanation, but repetition can weaken visual hierarchy. I prioritized a simpler, more readable presentation of the same chronological story.
 
 ## Step five: Build the solution in Tableau
 
