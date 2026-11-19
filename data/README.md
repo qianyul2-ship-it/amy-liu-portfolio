@@ -8,6 +8,7 @@ All files here are extracts of public datasets, keeping only the variables this 
 | `meps_2023_extract.csv` | MEPS 2023 person-level medical spending | 18,919 | Figures 1, 3, 5 |
 | `cms_pa_2026_plans.csv` | 2026 Pennsylvania individual-market medical plans (standard versions only) | 320 | Figures 1, 5 |
 | `cms_pa_2026_rates_age22_30.csv` | Monthly premiums for those plans, ages 22–30, by rating area | 7,281 | Figures 1, 5 |
+| `cms_pa_2026_service_areas.csv` | Which counties each issuer's service area covers (to find plans sold in Allegheny County) | 1,175 | Figures 1, 5 |
 | `nfcs_2024_extract.csv` | 2024 National Financial Capability Study respondents | 25,539 | Figure 4 |
 
 ## Sources
@@ -61,6 +62,16 @@ All files here are extracts of public datasets, keeping only the variables this 
 | `age` | Age of the enrollee (22–30) |
 | `tobacco` | Tobacco rating rule |
 | `monthly_premium` | Full monthly premium before any subsidy ($) |
+
+### `cms_pa_2026_service_areas.csv`
+
+| Column | Meaning |
+| --- | --- |
+| `issuer_id`, `service_area_id` | Join to `cms_pa_2026_plans.csv` on both columns |
+| `service_area_name` | Issuer's name for the service area |
+| `covers_entire_state` | Whether the service area is statewide |
+| `county_name` | County covered |
+| `partial_county` | Whether only part of the county is covered |
 
 ### `nfcs_2024_extract.csv`
 

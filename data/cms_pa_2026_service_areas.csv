@@ -1,0 +1,1176 @@
+issuer_id,service_area_id,service_area_name,covers_entire_state,county_name,partial_county
+15983,PAS001,Ambetter of Pennsylvania,False,Luzerne,False
+15983,PAS001,Ambetter of Pennsylvania,False,Fayette,False
+15983,PAS001,Ambetter of Pennsylvania,False,Westmoreland,False
+15983,PAS001,Ambetter of Pennsylvania,False,Berks,False
+15983,PAS001,Ambetter of Pennsylvania,False,Delaware,False
+15983,PAS001,Ambetter of Pennsylvania,False,Somerset,False
+15983,PAS001,Ambetter of Pennsylvania,False,Northampton,False
+15983,PAS001,Ambetter of Pennsylvania,False,Huntingdon,False
+15983,PAS001,Ambetter of Pennsylvania,False,Sullivan,False
+15983,PAS001,Ambetter of Pennsylvania,False,Lackawanna,False
+15983,PAS001,Ambetter of Pennsylvania,False,Bucks,False
+15983,PAS001,Ambetter of Pennsylvania,False,Northumberland,False
+15983,PAS001,Ambetter of Pennsylvania,False,Philadelphia,False
+15983,PAS001,Ambetter of Pennsylvania,False,Elk,False
+15983,PAS001,Ambetter of Pennsylvania,False,Bradford,False
+15983,PAS001,Ambetter of Pennsylvania,False,Wyoming,False
+15983,PAS001,Ambetter of Pennsylvania,False,Clearfield,False
+15983,PAS001,Ambetter of Pennsylvania,False,Juniata,False
+15983,PAS001,Ambetter of Pennsylvania,False,Snyder,False
+15983,PAS001,Ambetter of Pennsylvania,False,Schuylkill,False
+15983,PAS001,Ambetter of Pennsylvania,False,Carbon,False
+15983,PAS001,Ambetter of Pennsylvania,False,Susquehanna,False
+15983,PAS001,Ambetter of Pennsylvania,False,Wayne,False
+15983,PAS001,Ambetter of Pennsylvania,False,Montgomery,False
+15983,PAS001,Ambetter of Pennsylvania,False,Clarion,False
+15983,PAS001,Ambetter of Pennsylvania,False,Montour,False
+15983,PAS001,Ambetter of Pennsylvania,False,Clinton,False
+15983,PAS001,Ambetter of Pennsylvania,False,Lancaster,False
+15983,PAS001,Ambetter of Pennsylvania,False,Union,False
+15983,PAS001,Ambetter of Pennsylvania,False,Mifflin,False
+15983,PAS001,Ambetter of Pennsylvania,False,Jefferson,False
+15983,PAS001,Ambetter of Pennsylvania,False,Columbia,False
+15983,PAS001,Ambetter of Pennsylvania,False,Cambria,False
+15983,PAS001,Ambetter of Pennsylvania,False,Monroe,False
+15983,PAS001,Ambetter of Pennsylvania,False,Lycoming,False
+15983,PAS001,Ambetter of Pennsylvania,False,Centre,False
+15983,PAS001,Ambetter of Pennsylvania,False,Blair,False
+15983,PAS001,Ambetter of Pennsylvania,False,Chester,False
+15983,PAS001,Ambetter of Pennsylvania,False,Lehigh,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Somerset,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,McKean,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Mercer,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Allegheny,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Venango,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Washington,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Potter,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Westmoreland,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Beaver,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Lawrence,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Greene,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Fayette,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Butler,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Blair,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Bedford,False
+16322,PAS001,SG MCA EPO/PPO Premium - 2026,False,Erie,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Greene,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Potter,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Huntingdon,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Elk,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Armstrong,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Somerset,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Blair,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Washington,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Forest,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Cambria,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Warren,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Venango,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Jefferson,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Lawrence,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Westmoreland,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Cameron,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Beaver,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Allegheny,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,McKean,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Bedford,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Fayette,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Butler,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Mercer,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Erie,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Clarion,False
+16322,PAS002,SG EPO/PPO Premium HO - 2026,False,Indiana,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Bedford,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Allegheny,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Venango,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Butler,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Washington,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Somerset,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Lawrence,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Potter,False
+16322,PAS003,SG EPO Partner HO - 2026,False,McKean,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Greene,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Mercer,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Blair,False
+16322,PAS003,SG EPO Partner HO - 2026,False,Erie,False
+16322,PAS004,IND Partner - 2026,False,Mercer,False
+16322,PAS004,IND Partner - 2026,False,Venango,False
+16322,PAS004,IND Partner - 2026,False,Allegheny,False
+16322,PAS004,IND Partner - 2026,False,Potter,False
+16322,PAS004,IND Partner - 2026,False,Greene,False
+16322,PAS004,IND Partner - 2026,False,Clinton,False
+16322,PAS004,IND Partner - 2026,False,Tioga,False
+16322,PAS004,IND Partner - 2026,False,Lawrence,False
+16322,PAS004,IND Partner - 2026,False,Erie,False
+16322,PAS004,IND Partner - 2026,False,McKean,False
+16322,PAS004,IND Partner - 2026,False,Washington,False
+16322,PAS004,IND Partner - 2026,False,Bedford,False
+16322,PAS004,IND Partner - 2026,False,Butler,False
+16322,PAS004,IND Partner - 2026,False,Lycoming,False
+16322,PAS004,IND Partner - 2026,False,Blair,False
+16322,PAS004,IND Partner - 2026,False,Somerset,False
+16322,PAS005,IND Select - 2026,False,Beaver,False
+16322,PAS005,IND Select - 2026,False,Washington,False
+16322,PAS005,IND Select - 2026,False,Butler,False
+16322,PAS005,IND Select - 2026,False,Allegheny,False
+16322,PAS005,IND Select - 2026,False,Fayette,False
+16322,PAS005,IND Select - 2026,False,Westmoreland,False
+16322,PAS006,IND Premium East - 2026,False,Carbon,False
+16322,PAS006,IND Premium East - 2026,False,Wyoming,False
+16322,PAS006,IND Premium East - 2026,False,Cumberland,False
+16322,PAS006,IND Premium East - 2026,False,Lycoming,False
+16322,PAS006,IND Premium East - 2026,False,Lackawanna,False
+16322,PAS006,IND Premium East - 2026,False,Dauphin,False
+16322,PAS006,IND Premium East - 2026,False,Sullivan,False
+16322,PAS006,IND Premium East - 2026,False,Clinton,False
+16322,PAS006,IND Premium East - 2026,False,Perry,False
+16322,PAS006,IND Premium East - 2026,False,Luzerne,False
+16322,PAS006,IND Premium East - 2026,False,Bradford,False
+16322,PAS006,IND Premium East - 2026,False,Lebanon,False
+16322,PAS006,IND Premium East - 2026,False,Tioga,False
+16322,PAS007,IND Premium West - 2026,False,Butler,False
+16322,PAS007,IND Premium West - 2026,False,Beaver,False
+16322,PAS007,IND Premium West - 2026,False,Elk,False
+16322,PAS007,IND Premium West - 2026,False,Clarion,False
+16322,PAS007,IND Premium West - 2026,False,Greene,False
+16322,PAS007,IND Premium West - 2026,False,Mercer,False
+16322,PAS007,IND Premium West - 2026,False,Armstrong,False
+16322,PAS007,IND Premium West - 2026,False,Bedford,False
+16322,PAS007,IND Premium West - 2026,False,McKean,False
+16322,PAS007,IND Premium West - 2026,False,Blair,False
+16322,PAS007,IND Premium West - 2026,False,Potter,False
+16322,PAS007,IND Premium West - 2026,False,Cambria,False
+16322,PAS007,IND Premium West - 2026,False,Lawrence,False
+16322,PAS007,IND Premium West - 2026,False,Jefferson,False
+16322,PAS007,IND Premium West - 2026,False,Huntingdon,False
+16322,PAS007,IND Premium West - 2026,False,Warren,False
+16322,PAS007,IND Premium West - 2026,False,Erie,False
+16322,PAS007,IND Premium West - 2026,False,Cameron,False
+16322,PAS007,IND Premium West - 2026,False,Indiana,False
+16322,PAS007,IND Premium West - 2026,False,Forest,False
+16322,PAS007,IND Premium West - 2026,False,Venango,False
+16322,PAS007,IND Premium West - 2026,False,Somerset,False
+16322,PAS007,IND Premium West - 2026,False,Westmoreland,False
+16322,PAS007,IND Premium West - 2026,False,Fayette,False
+16322,PAS007,IND Premium West - 2026,False,Allegheny,False
+16322,PAS007,IND Premium West - 2026,False,Washington,False
+19702,PAS001,JHP PPO,False,Montgomery,False
+19702,PAS001,JHP PPO,False,Monroe,False
+19702,PAS001,JHP PPO,False,Northampton,False
+19702,PAS001,JHP PPO,False,Schuylkill,False
+19702,PAS001,JHP PPO,False,Delaware,False
+19702,PAS001,JHP PPO,False,Lehigh,False
+19702,PAS001,JHP PPO,False,Carbon,False
+19702,PAS001,JHP PPO,False,Bucks,False
+19702,PAS001,JHP PPO,False,Philadelphia,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Bedford,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Somerset,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Potter,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Jefferson,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Huntingdon,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Blair,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Clearfield,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Cambria,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Cameron,False
+22444,PAS001,Marketplace All-Access HMO 1,False,Elk,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Mifflin,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Snyder,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Juniata,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Carbon,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Luzerne,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Monroe,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Schuylkill,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Northumberland,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Union,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Montour,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Columbia,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Wayne,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Tioga,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Centre,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Bradford,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Sullivan,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Susquehanna,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Clinton,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Lackawanna,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Lycoming,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Wyoming,False
+22444,PAS002,Marketplace All-Access HMO 2,False,Pike,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Dauphin,False
+22444,PAS003,Marketplace All-Access HMO 3,False,York,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Lancaster,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Lebanon,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Berks,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Fulton,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Perry,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Cumberland,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Adams,False
+22444,PAS003,Marketplace All-Access HMO 3,False,Franklin,False
+22444,PAS004,Marketplace All-Access HMO 4,False,Lehigh,False
+22444,PAS004,Marketplace All-Access HMO 4,False,Northampton,False
+22444,PAS005,Marketplace Extra HMO,False,Centre,False
+22444,PAS005,Marketplace Extra HMO,False,Snyder,False
+22444,PAS005,Marketplace Extra HMO,False,Perry,False
+22444,PAS005,Marketplace Extra HMO,False,Juniata,False
+22444,PAS005,Marketplace Extra HMO,False,Lehigh,False
+22444,PAS005,Marketplace Extra HMO,False,Northumberland,False
+22444,PAS005,Marketplace Extra HMO,False,Union,False
+22444,PAS005,Marketplace Extra HMO,False,Mifflin,False
+22444,PAS005,Marketplace Extra HMO,False,Lackawanna,False
+22444,PAS005,Marketplace Extra HMO,False,Dauphin,False
+22444,PAS005,Marketplace Extra HMO,False,Lycoming,False
+22444,PAS005,Marketplace Extra HMO,False,Monroe,False
+22444,PAS005,Marketplace Extra HMO,False,Susquehanna,False
+22444,PAS005,Marketplace Extra HMO,False,Carbon,False
+22444,PAS005,Marketplace Extra HMO,False,Cumberland,False
+22444,PAS005,Marketplace Extra HMO,False,Wyoming,False
+22444,PAS005,Marketplace Extra HMO,False,Clinton,False
+22444,PAS005,Marketplace Extra HMO,False,Schuylkill,False
+22444,PAS005,Marketplace Extra HMO,False,Luzerne,False
+22444,PAS005,Marketplace Extra HMO,False,Montour,False
+22444,PAS005,Marketplace Extra HMO,False,Columbia,False
+22444,PAS005,Marketplace Extra HMO,False,Northampton,False
+22444,PAS005,Marketplace Extra HMO,False,Wayne,False
+22444,PAS006,Marketplace Premier HMO 1,False,Mifflin,False
+22444,PAS006,Marketplace Premier HMO 1,False,Northumberland,False
+22444,PAS006,Marketplace Premier HMO 1,False,Snyder,False
+22444,PAS006,Marketplace Premier HMO 1,False,Montour,False
+22444,PAS006,Marketplace Premier HMO 1,False,Columbia,False
+22444,PAS006,Marketplace Premier HMO 1,False,Centre,False
+22444,PAS006,Marketplace Premier HMO 1,False,Union,False
+22444,PAS007,Marketplace Premier HMO 2,False,Schuylkill,False
+22444,PAS007,Marketplace Premier HMO 2,False,Carbon,False
+22444,PAS007,Marketplace Premier HMO 2,False,Monroe,False
+22444,PAS008,Marketplace Premier HMO 3,False,Luzerne,False
+22444,PAS008,Marketplace Premier HMO 3,False,Wayne,False
+22444,PAS008,Marketplace Premier HMO 3,False,Lackawanna,False
+22444,PAS009,All-Access HMO,False,Elk,False
+22444,PAS009,All-Access HMO,False,Cumberland,False
+22444,PAS009,All-Access HMO,False,Franklin,False
+22444,PAS009,All-Access HMO,False,Huntingdon,False
+22444,PAS009,All-Access HMO,False,Bedford,False
+22444,PAS009,All-Access HMO,False,Tioga,False
+22444,PAS009,All-Access HMO,False,Potter,False
+22444,PAS009,All-Access HMO,False,Berks,False
+22444,PAS009,All-Access HMO,False,Cameron,False
+22444,PAS009,All-Access HMO,False,Sullivan,False
+22444,PAS009,All-Access HMO,False,Lackawanna,False
+22444,PAS009,All-Access HMO,False,Perry,False
+22444,PAS009,All-Access HMO,False,Schuylkill,False
+22444,PAS009,All-Access HMO,False,Clearfield,False
+22444,PAS009,All-Access HMO,False,Jefferson,False
+22444,PAS009,All-Access HMO,False,Somerset,False
+22444,PAS009,All-Access HMO,False,Northumberland,False
+22444,PAS009,All-Access HMO,False,Lancaster,False
+22444,PAS009,All-Access HMO,False,Susquehanna,False
+22444,PAS009,All-Access HMO,False,Wayne,False
+22444,PAS009,All-Access HMO,False,York,False
+22444,PAS009,All-Access HMO,False,Lebanon,False
+22444,PAS009,All-Access HMO,False,Cambria,False
+22444,PAS009,All-Access HMO,False,Montour,False
+22444,PAS009,All-Access HMO,False,Centre,False
+22444,PAS009,All-Access HMO,False,Dauphin,False
+22444,PAS009,All-Access HMO,False,Columbia,False
+22444,PAS009,All-Access HMO,False,Monroe,False
+22444,PAS009,All-Access HMO,False,Wyoming,False
+22444,PAS009,All-Access HMO,False,Carbon,False
+22444,PAS009,All-Access HMO,False,Northampton,False
+22444,PAS009,All-Access HMO,False,Pike,False
+22444,PAS009,All-Access HMO,False,Lycoming,False
+22444,PAS009,All-Access HMO,False,Blair,False
+22444,PAS009,All-Access HMO,False,Juniata,False
+22444,PAS009,All-Access HMO,False,Fulton,False
+22444,PAS009,All-Access HMO,False,Luzerne,False
+22444,PAS009,All-Access HMO,False,Bradford,False
+22444,PAS009,All-Access HMO,False,Lehigh,False
+22444,PAS009,All-Access HMO,False,Clinton,False
+22444,PAS009,All-Access HMO,False,Mifflin,False
+22444,PAS009,All-Access HMO,False,Adams,False
+22444,PAS009,All-Access HMO,False,Union,False
+22444,PAS009,All-Access HMO,False,Snyder,False
+22444,PAS010,Premier HMO 1,False,Union,False
+22444,PAS010,Premier HMO 1,False,Centre,False
+22444,PAS010,Premier HMO 1,False,Mifflin,False
+22444,PAS010,Premier HMO 1,False,Snyder,False
+22444,PAS010,Premier HMO 1,False,Columbia,False
+22444,PAS010,Premier HMO 1,False,Montour,False
+22444,PAS010,Premier HMO 1,False,Northumberland,False
+22444,PAS011,Premier HMO 2,False,Monroe,False
+22444,PAS011,Premier HMO 2,False,Northampton,False
+22444,PAS011,Premier HMO 2,False,Carbon,False
+22444,PAS011,Premier HMO 2,False,Schuylkill,False
+22444,PAS011,Premier HMO 2,False,Lehigh,False
+22444,PAS012,Premier HMO 3,False,Lackawanna,False
+22444,PAS012,Premier HMO 3,False,Wayne,False
+22444,PAS012,Premier HMO 3,False,Luzerne,False
+31609,PAS001,Personal Choice Consumer PPO,False,Chester,False
+31609,PAS001,Personal Choice Consumer PPO,False,Philadelphia,False
+31609,PAS001,Personal Choice Consumer PPO,False,Montgomery,False
+31609,PAS001,Personal Choice Consumer PPO,False,Bucks,False
+31609,PAS001,Personal Choice Consumer PPO,False,Delaware,False
+31609,PAS002,Personal Choice Consumer EPO,False,Bucks,False
+31609,PAS002,Personal Choice Consumer EPO,False,Delaware,False
+31609,PAS002,Personal Choice Consumer EPO,False,Chester,False
+31609,PAS002,Personal Choice Consumer EPO,False,Montgomery,False
+31609,PAS002,Personal Choice Consumer EPO,False,Philadelphia,False
+33709,PAS001,WPA Zone AA,False,Erie,False
+33709,PAS002,WPA Zone AC,False,Beaver,False
+33709,PAS002,WPA Zone AC,False,Armstrong,False
+33709,PAS002,WPA Zone AC,False,Westmoreland,False
+33709,PAS002,WPA Zone AC,False,Butler,False
+33709,PAS002,WPA Zone AC,False,Mercer,False
+33709,PAS002,WPA Zone AC,False,Washington,False
+33709,PAS002,WPA Zone AC,False,Erie,False
+33709,PAS002,WPA Zone AC,False,Allegheny,False
+33709,PAS003,WPA Zone AD,False,Jefferson,False
+33709,PAS003,WPA Zone AD,False,Lawrence,False
+33709,PAS003,WPA Zone AD,False,Forest,False
+33709,PAS003,WPA Zone AD,False,McKean,False
+33709,PAS003,WPA Zone AD,False,Elk,False
+33709,PAS003,WPA Zone AD,False,Potter,False
+33709,PAS003,WPA Zone AD,False,Greene,False
+33709,PAS003,WPA Zone AD,False,Cameron,False
+33709,PAS003,WPA Zone AD,False,Clearfield,False
+33709,PAS003,WPA Zone AD,False,Crawford,False
+33709,PAS003,WPA Zone AD,False,Venango,False
+33709,PAS003,WPA Zone AD,False,Huntingdon,False
+33709,PAS003,WPA Zone AD,False,Warren,False
+33709,PAS003,WPA Zone AD,False,Bedford,False
+33709,PAS003,WPA Zone AD,False,Indiana,False
+33709,PAS003,WPA Zone AD,False,Fayette,False
+33709,PAS003,WPA Zone AD,False,Cambria,False
+33709,PAS003,WPA Zone AD,False,Blair,False
+33709,PAS003,WPA Zone AD,False,Centre,True
+33709,PAS003,WPA Zone AD,False,Somerset,False
+33709,PAS003,WPA Zone AD,False,Clarion,False
+33709,PAS004,SEPA Zone AG,False,Bucks,False
+33709,PAS005,SEPA Zone AH,False,Chester,False
+33709,PAS006,SEPA Zone AI,False,Delaware,False
+33709,PAS007,SEPA Zone AJ,False,Montgomery,False
+33709,PAS008,SEPA Zone AK,False,Philadelphia,False
+33709,PAS009,WPA Zone AL,False,Warren,False
+33709,PAS009,WPA Zone AL,False,McKean,False
+33709,PAS009,WPA Zone AL,False,Huntingdon,False
+33709,PAS009,WPA Zone AL,False,Venango,False
+33709,PAS009,WPA Zone AL,False,Potter,False
+33709,PAS009,WPA Zone AL,False,Clarion,False
+33709,PAS009,WPA Zone AL,False,Jefferson,False
+33709,PAS009,WPA Zone AL,False,Bedford,False
+33709,PAS009,WPA Zone AL,False,Cameron,False
+33709,PAS009,WPA Zone AL,False,Blair,False
+33709,PAS009,WPA Zone AL,False,Somerset,False
+33709,PAS009,WPA Zone AL,False,Cambria,False
+33709,PAS009,WPA Zone AL,False,Centre,True
+33709,PAS009,WPA Zone AL,False,Clearfield,False
+33709,PAS009,WPA Zone AL,False,Crawford,False
+33709,PAS009,WPA Zone AL,False,Forest,False
+33709,PAS009,WPA Zone AL,False,Greene,False
+33709,PAS009,WPA Zone AL,False,Mercer,False
+33709,PAS009,WPA Zone AL,False,Elk,False
+33709,PAS010,WPA Zone AM,False,Warren,False
+33709,PAS010,WPA Zone AM,False,Venango,False
+33709,PAS010,WPA Zone AM,False,Blair,False
+33709,PAS010,WPA Zone AM,False,Lawrence,False
+33709,PAS010,WPA Zone AM,False,Centre,True
+33709,PAS010,WPA Zone AM,False,Allegheny,False
+33709,PAS010,WPA Zone AM,False,Somerset,False
+33709,PAS010,WPA Zone AM,False,Potter,False
+33709,PAS010,WPA Zone AM,False,Jefferson,False
+33709,PAS010,WPA Zone AM,False,Westmoreland,False
+33709,PAS010,WPA Zone AM,False,Mercer,False
+33709,PAS010,WPA Zone AM,False,Forest,False
+33709,PAS010,WPA Zone AM,False,Cameron,False
+33709,PAS010,WPA Zone AM,False,Clarion,False
+33709,PAS010,WPA Zone AM,False,Crawford,False
+33709,PAS010,WPA Zone AM,False,Armstrong,False
+33709,PAS010,WPA Zone AM,False,Elk,False
+33709,PAS010,WPA Zone AM,False,Beaver,False
+33709,PAS010,WPA Zone AM,False,Fayette,False
+33709,PAS010,WPA Zone AM,False,Cambria,False
+33709,PAS010,WPA Zone AM,False,Washington,False
+33709,PAS010,WPA Zone AM,False,Clearfield,False
+33709,PAS010,WPA Zone AM,False,Huntingdon,False
+33709,PAS010,WPA Zone AM,False,Butler,False
+33709,PAS010,WPA Zone AM,False,Greene,False
+33709,PAS010,WPA Zone AM,False,Indiana,False
+33709,PAS010,WPA Zone AM,False,Bedford,False
+33709,PAS010,WPA Zone AM,False,McKean,False
+33709,PAS011,CPA Zone F,False,Mifflin,False
+33709,PAS011,CPA Zone F,False,Juniata,False
+33709,PAS011,CPA Zone F,False,Cumberland,False
+33709,PAS011,CPA Zone F,False,Union,False
+33709,PAS011,CPA Zone F,False,Schuylkill,False
+33709,PAS011,CPA Zone F,False,Franklin,False
+33709,PAS011,CPA Zone F,False,York,False
+33709,PAS011,CPA Zone F,False,Northampton,False
+33709,PAS011,CPA Zone F,False,Lancaster,False
+33709,PAS011,CPA Zone F,False,Snyder,False
+33709,PAS011,CPA Zone F,False,Montour,False
+33709,PAS011,CPA Zone F,False,Lebanon,False
+33709,PAS011,CPA Zone F,False,Lehigh,False
+33709,PAS011,CPA Zone F,False,Centre,True
+33709,PAS011,CPA Zone F,False,Adams,False
+33709,PAS011,CPA Zone F,False,Fulton,False
+33709,PAS011,CPA Zone F,False,Northumberland,False
+33709,PAS011,CPA Zone F,False,Perry,False
+33709,PAS011,CPA Zone F,False,Berks,False
+33709,PAS011,CPA Zone F,False,Dauphin,False
+33709,PAS011,CPA Zone F,False,Columbia,False
+33709,PAS012,WPA Zone I,False,Somerset,False
+33709,PAS012,WPA Zone I,False,Erie,False
+33709,PAS012,WPA Zone I,False,Butler,False
+33709,PAS012,WPA Zone I,False,Crawford,False
+33709,PAS012,WPA Zone I,False,Cambria,False
+33709,PAS012,WPA Zone I,False,Forest,False
+33709,PAS012,WPA Zone I,False,Armstrong,False
+33709,PAS012,WPA Zone I,False,Blair,False
+33709,PAS012,WPA Zone I,False,Beaver,False
+33709,PAS012,WPA Zone I,False,Washington,False
+33709,PAS012,WPA Zone I,False,Fayette,False
+33709,PAS012,WPA Zone I,False,Warren,False
+33709,PAS012,WPA Zone I,False,Clarion,False
+33709,PAS012,WPA Zone I,False,Greene,False
+33709,PAS012,WPA Zone I,False,Allegheny,False
+33709,PAS012,WPA Zone I,False,Westmoreland,False
+33709,PAS013,WPA Zone J,False,Butler,False
+33709,PAS013,WPA Zone J,False,Indiana,False
+33709,PAS013,WPA Zone J,False,Westmoreland,False
+33709,PAS013,WPA Zone J,False,Fayette,False
+33709,PAS013,WPA Zone J,False,Lawrence,False
+33709,PAS013,WPA Zone J,False,Armstrong,False
+33709,PAS013,WPA Zone J,False,Beaver,False
+33709,PAS013,WPA Zone J,False,Allegheny,False
+33709,PAS013,WPA Zone J,False,Washington,False
+33709,PAS014,WPA Zone L,False,Erie,False
+33709,PAS014,WPA Zone L,False,Westmoreland,False
+33709,PAS014,WPA Zone L,False,Allegheny,False
+33709,PAS014,WPA Zone L,False,Washington,False
+33709,PAS014,WPA Zone L,False,Butler,False
+33709,PAS015,CPA Zone N,False,Schuylkill,False
+33709,PAS015,CPA Zone N,False,Northampton,False
+33709,PAS015,CPA Zone N,False,Lehigh,False
+33709,PAS016,CPA Zone O,False,Lancaster,False
+33709,PAS016,CPA Zone O,False,Franklin,False
+33709,PAS016,CPA Zone O,False,York,False
+33709,PAS016,CPA Zone O,False,Perry,False
+33709,PAS016,CPA Zone O,False,Adams,False
+33709,PAS016,CPA Zone O,False,Cumberland,False
+33709,PAS016,CPA Zone O,False,Lebanon,False
+33709,PAS016,CPA Zone O,False,Dauphin,False
+33709,PAS016,CPA Zone O,False,Berks,False
+33709,PAS017,NEPA Zone Q,False,Lackawanna,False
+33709,PAS017,NEPA Zone Q,False,Monroe,False
+33709,PAS017,NEPA Zone Q,False,Carbon,False
+33709,PAS018,NEPA Zone U,False,Tioga,False
+33709,PAS018,NEPA Zone U,False,Luzerne,False
+33709,PAS018,NEPA Zone U,False,Bradford,False
+33709,PAS018,NEPA Zone U,False,Susquehanna,False
+33709,PAS018,NEPA Zone U,False,Lycoming,False
+33709,PAS018,NEPA Zone U,False,Pike,False
+33709,PAS018,NEPA Zone U,False,Monroe,False
+33709,PAS018,NEPA Zone U,False,Wayne,False
+33709,PAS018,NEPA Zone U,False,Clinton,False
+33709,PAS018,NEPA Zone U,False,Sullivan,False
+33709,PAS018,NEPA Zone U,False,Wyoming,False
+33709,PAS018,NEPA Zone U,False,Carbon,False
+33709,PAS018,NEPA Zone U,False,Lackawanna,False
+33709,PAS019,CPA Zone X,False,Lancaster,False
+33709,PAS019,CPA Zone X,False,Franklin,False
+33709,PAS019,CPA Zone X,False,Cumberland,False
+33709,PAS019,CPA Zone X,False,Adams,False
+33709,PAS019,CPA Zone X,False,Berks,False
+33709,PAS019,CPA Zone X,False,York,False
+33709,PAS019,CPA Zone X,False,Lebanon,False
+33709,PAS019,CPA Zone X,False,Perry,False
+33709,PAS019,CPA Zone X,False,Dauphin,False
+33709,PAS020,WPA Zone Y,False,Erie,False
+33709,PAS020,WPA Zone Y,False,Mercer,False
+33709,PAS020,WPA Zone Y,False,Butler,False
+33709,PAS020,WPA Zone Y,False,Westmoreland,False
+33709,PAS020,WPA Zone Y,False,Allegheny,False
+33709,PAS020,WPA Zone Y,False,Washington,False
+33709,PAS021,SEPA Zone Z,False,Bucks,False
+33709,PAS021,SEPA Zone Z,False,Delaware,False
+33709,PAS021,SEPA Zone Z,False,Chester,False
+33709,PAS021,SEPA Zone Z,False,Montgomery,False
+33709,PAS021,SEPA Zone Z,False,Philadelphia,False
+33871,PAS001,Keystone Consumer HMO,False,Bucks,False
+33871,PAS001,Keystone Consumer HMO,False,Montgomery,False
+33871,PAS001,Keystone Consumer HMO,False,Chester,False
+33871,PAS001,Keystone Consumer HMO,False,Philadelphia,False
+33871,PAS001,Keystone Consumer HMO,False,Delaware,False
+33871,PAS002,Keystone Small Group HMO,False,Delaware,False
+33871,PAS002,Keystone Small Group HMO,False,Montgomery,False
+33871,PAS002,Keystone Small Group HMO,False,Chester,False
+33871,PAS002,Keystone Small Group HMO,False,Philadelphia,False
+33871,PAS002,Keystone Small Group HMO,False,Bucks,False
+33871,PAS003,Keystone Small Group DPOS,False,Montgomery,False
+33871,PAS003,Keystone Small Group DPOS,False,Philadelphia,False
+33871,PAS003,Keystone Small Group DPOS,False,Bucks,False
+33871,PAS003,Keystone Small Group DPOS,False,Chester,False
+33871,PAS003,Keystone Small Group DPOS,False,Delaware,False
+45127,PAS001,Dental - SG,False,Centre,True
+45127,PAS001,Dental - SG,False,Columbia,False
+45127,PAS001,Dental - SG,False,Snyder,False
+45127,PAS001,Dental - SG,False,Northampton,False
+45127,PAS001,Dental - SG,False,Northumberland,False
+45127,PAS001,Dental - SG,False,Berks,False
+45127,PAS001,Dental - SG,False,Perry,False
+45127,PAS001,Dental - SG,False,Lancaster,False
+45127,PAS001,Dental - SG,False,Montour,False
+45127,PAS001,Dental - SG,False,Fulton,False
+45127,PAS001,Dental - SG,False,Franklin,False
+45127,PAS001,Dental - SG,False,Dauphin,False
+45127,PAS001,Dental - SG,False,York,False
+45127,PAS001,Dental - SG,False,Cumberland,False
+45127,PAS001,Dental - SG,False,Lehigh,False
+45127,PAS001,Dental - SG,False,Adams,False
+45127,PAS001,Dental - SG,False,Mifflin,False
+45127,PAS001,Dental - SG,False,Schuylkill,False
+45127,PAS001,Dental - SG,False,Union,False
+45127,PAS001,Dental - SG,False,Juniata,False
+45127,PAS001,Dental - SG,False,Lebanon,False
+45127,PAS002,Dental - IA,False,Schuylkill,False
+45127,PAS002,Dental - IA,False,Perry,False
+45127,PAS002,Dental - IA,False,Union,False
+45127,PAS002,Dental - IA,False,Northumberland,False
+45127,PAS002,Dental - IA,False,Lehigh,False
+45127,PAS002,Dental - IA,False,Lancaster,False
+45127,PAS002,Dental - IA,False,Juniata,False
+45127,PAS002,Dental - IA,False,Berks,False
+45127,PAS002,Dental - IA,False,Centre,True
+45127,PAS002,Dental - IA,False,Dauphin,False
+45127,PAS002,Dental - IA,False,York,False
+45127,PAS002,Dental - IA,False,Columbia,False
+45127,PAS002,Dental - IA,False,Lebanon,False
+45127,PAS002,Dental - IA,False,Mifflin,False
+45127,PAS002,Dental - IA,False,Cumberland,False
+45127,PAS002,Dental - IA,False,Montour,False
+45127,PAS002,Dental - IA,False,Fulton,False
+45127,PAS002,Dental - IA,False,Snyder,False
+45127,PAS002,Dental - IA,False,Northampton,False
+45127,PAS002,Dental - IA,False,Adams,False
+45127,PAS002,Dental - IA,False,Franklin,False
+45127,PAS003,Capital Service Area 21 - SG,False,York,False
+45127,PAS003,Capital Service Area 21 - SG,False,Lancaster,False
+45127,PAS003,Capital Service Area 21 - SG,False,Union,False
+45127,PAS003,Capital Service Area 21 - SG,False,Snyder,False
+45127,PAS003,Capital Service Area 21 - SG,False,Montour,False
+45127,PAS003,Capital Service Area 21 - SG,False,Berks,False
+45127,PAS003,Capital Service Area 21 - SG,False,Northampton,False
+45127,PAS003,Capital Service Area 21 - SG,False,Dauphin,False
+45127,PAS003,Capital Service Area 21 - SG,False,Columbia,False
+45127,PAS003,Capital Service Area 21 - SG,False,Adams,False
+45127,PAS003,Capital Service Area 21 - SG,False,Mifflin,False
+45127,PAS003,Capital Service Area 21 - SG,False,Lebanon,False
+45127,PAS003,Capital Service Area 21 - SG,False,Fulton,False
+45127,PAS003,Capital Service Area 21 - SG,False,Centre,True
+45127,PAS003,Capital Service Area 21 - SG,False,Lehigh,False
+45127,PAS003,Capital Service Area 21 - SG,False,Northumberland,False
+45127,PAS003,Capital Service Area 21 - SG,False,Juniata,False
+45127,PAS003,Capital Service Area 21 - SG,False,Perry,False
+45127,PAS003,Capital Service Area 21 - SG,False,Schuylkill,False
+45127,PAS003,Capital Service Area 21 - SG,False,Franklin,False
+45127,PAS003,Capital Service Area 21 - SG,False,Cumberland,False
+45127,PAS004,Capital Service Area 21 - IA,False,Lancaster,False
+45127,PAS004,Capital Service Area 21 - IA,False,Northumberland,False
+45127,PAS004,Capital Service Area 21 - IA,False,Columbia,False
+45127,PAS004,Capital Service Area 21 - IA,False,Snyder,False
+45127,PAS004,Capital Service Area 21 - IA,False,Franklin,False
+45127,PAS004,Capital Service Area 21 - IA,False,Schuylkill,False
+45127,PAS004,Capital Service Area 21 - IA,False,Berks,False
+45127,PAS004,Capital Service Area 21 - IA,False,Juniata,False
+45127,PAS004,Capital Service Area 21 - IA,False,Cumberland,False
+45127,PAS004,Capital Service Area 21 - IA,False,Perry,False
+45127,PAS004,Capital Service Area 21 - IA,False,York,False
+45127,PAS004,Capital Service Area 21 - IA,False,Dauphin,False
+45127,PAS004,Capital Service Area 21 - IA,False,Lebanon,False
+45127,PAS004,Capital Service Area 21 - IA,False,Adams,False
+45127,PAS004,Capital Service Area 21 - IA,False,Northampton,False
+45127,PAS004,Capital Service Area 21 - IA,False,Centre,True
+45127,PAS004,Capital Service Area 21 - IA,False,Montour,False
+45127,PAS004,Capital Service Area 21 - IA,False,Mifflin,False
+45127,PAS004,Capital Service Area 21 - IA,False,Union,False
+45127,PAS004,Capital Service Area 21 - IA,False,Fulton,False
+45127,PAS004,Capital Service Area 21 - IA,False,Lehigh,False
+45127,PAS005,Capital Service Area PPO - IA,False,Lehigh,False
+45127,PAS005,Capital Service Area PPO - IA,False,Dauphin,False
+45127,PAS005,Capital Service Area PPO - IA,False,Schuylkill,False
+45127,PAS005,Capital Service Area PPO - IA,False,Centre,True
+45127,PAS005,Capital Service Area PPO - IA,False,Lebanon,False
+45127,PAS005,Capital Service Area PPO - IA,False,Perry,False
+45127,PAS005,Capital Service Area PPO - IA,False,Snyder,False
+45127,PAS005,Capital Service Area PPO - IA,False,Fulton,False
+45127,PAS005,Capital Service Area PPO - IA,False,Adams,False
+45127,PAS005,Capital Service Area PPO - IA,False,Franklin,False
+45127,PAS005,Capital Service Area PPO - IA,False,Cumberland,False
+45127,PAS005,Capital Service Area PPO - IA,False,Northampton,False
+45127,PAS005,Capital Service Area PPO - IA,False,Berks,False
+45127,PAS005,Capital Service Area PPO - IA,False,Columbia,False
+45127,PAS005,Capital Service Area PPO - IA,False,Union,False
+45127,PAS005,Capital Service Area PPO - IA,False,Northumberland,False
+45127,PAS005,Capital Service Area PPO - IA,False,Mifflin,False
+45127,PAS005,Capital Service Area PPO - IA,False,Juniata,False
+45127,PAS005,Capital Service Area PPO - IA,False,York,False
+45127,PAS005,Capital Service Area PPO - IA,False,Montour,False
+45127,PAS006,Advance PPO - SG,False,Adams,False
+45127,PAS006,Advance PPO - SG,False,Lancaster,False
+45127,PAS006,Advance PPO - SG,False,Berks,False
+45127,PAS007,Advance PPO - IA,False,Lancaster,False
+45127,PAS008,Convenience PPO - SG,False,Lehigh,False
+45127,PAS008,Convenience PPO - SG,False,Adams,False
+45127,PAS008,Convenience PPO - SG,False,Northampton,False
+45127,PAS008,Convenience PPO - SG,False,Franklin,False
+45127,PAS008,Convenience PPO - SG,False,Lebanon,False
+45127,PAS008,Convenience PPO - SG,False,Lancaster,False
+45127,PAS008,Convenience PPO - SG,False,York,False
+45127,PAS009,Convenience PPO - IA,False,York,False
+45127,PAS009,Convenience PPO - IA,False,Northampton,False
+45127,PAS009,Convenience PPO - IA,False,Lebanon,False
+45127,PAS009,Convenience PPO - IA,False,Lehigh,False
+45127,PAS009,Convenience PPO - IA,False,Franklin,False
+45127,PAS009,Convenience PPO - IA,False,Adams,False
+45127,PAS010,Capital Advantage PPO - SG,False,York,False
+45127,PAS010,Capital Advantage PPO - SG,False,Cumberland,False
+45127,PAS010,Capital Advantage PPO - SG,False,Perry,False
+45127,PAS010,Capital Advantage PPO - SG,False,Dauphin,False
+45127,PAS011,Capital Advantage PPO - IA,False,Perry,False
+45127,PAS011,Capital Advantage PPO - IA,False,Dauphin,False
+45127,PAS011,Capital Advantage PPO - IA,False,Cumberland,False
+52899,PAS001,SG HMO R Standard - 2026,False,Warren,False
+52899,PAS001,SG HMO R Standard - 2026,False,Armstrong,False
+52899,PAS001,SG HMO R Standard - 2026,False,Blair,False
+52899,PAS001,SG HMO R Standard - 2026,False,McKean,False
+52899,PAS001,SG HMO R Standard - 2026,False,Lawrence,False
+52899,PAS001,SG HMO R Standard - 2026,False,Venango,False
+52899,PAS001,SG HMO R Standard - 2026,False,Fayette,False
+52899,PAS001,SG HMO R Standard - 2026,False,Washington,False
+52899,PAS001,SG HMO R Standard - 2026,False,Clarion,False
+52899,PAS001,SG HMO R Standard - 2026,False,Forest,False
+52899,PAS001,SG HMO R Standard - 2026,False,Elk,False
+52899,PAS001,SG HMO R Standard - 2026,False,Cambria,False
+52899,PAS001,SG HMO R Standard - 2026,False,Bedford,False
+52899,PAS001,SG HMO R Standard - 2026,False,Huntingdon,False
+52899,PAS001,SG HMO R Standard - 2026,False,Westmoreland,False
+52899,PAS001,SG HMO R Standard - 2026,False,Allegheny,False
+52899,PAS001,SG HMO R Standard - 2026,False,Jefferson,False
+52899,PAS001,SG HMO R Standard - 2026,False,Somerset,False
+52899,PAS001,SG HMO R Standard - 2026,False,Indiana,False
+52899,PAS001,SG HMO R Standard - 2026,False,Potter,False
+52899,PAS001,SG HMO R Standard - 2026,False,Butler,False
+52899,PAS001,SG HMO R Standard - 2026,False,Mercer,False
+52899,PAS001,SG HMO R Standard - 2026,False,Erie,False
+52899,PAS001,SG HMO R Standard - 2026,False,Cameron,False
+52899,PAS001,SG HMO R Standard - 2026,False,Greene,False
+52899,PAS001,SG HMO R Standard - 2026,False,Beaver,False
+52899,PAS002,IND HMO R Standard - 2026,False,Clearfield,False
+52899,PAS002,IND HMO R Standard - 2026,False,Crawford,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Clearfield,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Cameron,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Jefferson,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Blair,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Somerset,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Cambria,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Bedford,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Huntingdon,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Elk,False
+75729,PAS001,Marketplace All-Access PPO 1,False,Potter,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Clinton,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Monroe,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Snyder,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Sullivan,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Montour,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Schuylkill,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Union,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Tioga,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Lycoming,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Northumberland,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Susquehanna,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Luzerne,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Wyoming,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Pike,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Centre,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Juniata,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Columbia,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Mifflin,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Lackawanna,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Carbon,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Wayne,False
+75729,PAS002,Marketplace All-Access PPO 2,False,Bradford,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Adams,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Dauphin,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Franklin,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Berks,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Fulton,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Lancaster,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Perry,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Lebanon,False
+75729,PAS003,Marketplace All-Access PPO 3,False,Cumberland,False
+75729,PAS003,Marketplace All-Access PPO 3,False,York,False
+75729,PAS004,Marketplace All-Access PPO4,False,Lehigh,False
+75729,PAS004,Marketplace All-Access PPO4,False,Northampton,False
+75729,PAS005,All-Access PPO,False,Susquehanna,False
+75729,PAS005,All-Access PPO,False,Mifflin,False
+75729,PAS005,All-Access PPO,False,Cambria,False
+75729,PAS005,All-Access PPO,False,Carbon,False
+75729,PAS005,All-Access PPO,False,Montour,False
+75729,PAS005,All-Access PPO,False,Elk,False
+75729,PAS005,All-Access PPO,False,Huntingdon,False
+75729,PAS005,All-Access PPO,False,Schuylkill,False
+75729,PAS005,All-Access PPO,False,Lancaster,False
+75729,PAS005,All-Access PPO,False,Potter,False
+75729,PAS005,All-Access PPO,False,Columbia,False
+75729,PAS005,All-Access PPO,False,Tioga,False
+75729,PAS005,All-Access PPO,False,Northampton,False
+75729,PAS005,All-Access PPO,False,Wyoming,False
+75729,PAS005,All-Access PPO,False,Clinton,False
+75729,PAS005,All-Access PPO,False,Lehigh,False
+75729,PAS005,All-Access PPO,False,Centre,False
+75729,PAS005,All-Access PPO,False,Berks,False
+75729,PAS005,All-Access PPO,False,Blair,False
+75729,PAS005,All-Access PPO,False,Adams,False
+75729,PAS005,All-Access PPO,False,Lebanon,False
+75729,PAS005,All-Access PPO,False,Wayne,False
+75729,PAS005,All-Access PPO,False,Lycoming,False
+75729,PAS005,All-Access PPO,False,Bedford,False
+75729,PAS005,All-Access PPO,False,Fulton,False
+75729,PAS005,All-Access PPO,False,Monroe,False
+75729,PAS005,All-Access PPO,False,York,False
+75729,PAS005,All-Access PPO,False,Sullivan,False
+75729,PAS005,All-Access PPO,False,Cumberland,False
+75729,PAS005,All-Access PPO,False,Clearfield,False
+75729,PAS005,All-Access PPO,False,Bradford,False
+75729,PAS005,All-Access PPO,False,Luzerne,False
+75729,PAS005,All-Access PPO,False,Dauphin,False
+75729,PAS005,All-Access PPO,False,Northumberland,False
+75729,PAS005,All-Access PPO,False,Lackawanna,False
+75729,PAS005,All-Access PPO,False,Snyder,False
+75729,PAS005,All-Access PPO,False,Jefferson,False
+75729,PAS005,All-Access PPO,False,Franklin,False
+75729,PAS005,All-Access PPO,False,Juniata,False
+75729,PAS005,All-Access PPO,False,Pike,False
+75729,PAS005,All-Access PPO,False,Perry,False
+75729,PAS005,All-Access PPO,False,Cameron,False
+75729,PAS005,All-Access PPO,False,Somerset,False
+75729,PAS005,All-Access PPO,False,Union,False
+75729,PAS006,Extra PPO,False,Lehigh,False
+75729,PAS006,Extra PPO,False,Wayne,False
+75729,PAS006,Extra PPO,False,Schuylkill,False
+75729,PAS006,Extra PPO,False,Northumberland,False
+75729,PAS006,Extra PPO,False,Columbia,False
+75729,PAS006,Extra PPO,False,Northampton,False
+75729,PAS006,Extra PPO,False,Montour,False
+75729,PAS006,Extra PPO,False,Centre,False
+75729,PAS006,Extra PPO,False,Perry,False
+75729,PAS006,Extra PPO,False,Lackawanna,False
+75729,PAS006,Extra PPO,False,Snyder,False
+75729,PAS006,Extra PPO,False,Dauphin,False
+75729,PAS006,Extra PPO,False,Cumberland,False
+75729,PAS006,Extra PPO,False,Luzerne,False
+75729,PAS006,Extra PPO,False,Lycoming,False
+75729,PAS006,Extra PPO,False,Susquehanna,False
+75729,PAS006,Extra PPO,False,Juniata,False
+75729,PAS006,Extra PPO,False,Carbon,False
+75729,PAS006,Extra PPO,False,Monroe,False
+75729,PAS006,Extra PPO,False,Clinton,False
+75729,PAS006,Extra PPO,False,Mifflin,False
+75729,PAS006,Extra PPO,False,Wyoming,False
+75729,PAS006,Extra PPO,False,Union,False
+75729,PAS007,Choices PPO 1,False,Northumberland,False
+75729,PAS007,Choices PPO 1,False,Montour,False
+75729,PAS007,Choices PPO 1,False,Snyder,False
+75729,PAS007,Choices PPO 1,False,Union,False
+75729,PAS007,Choices PPO 1,False,Columbia,False
+75729,PAS007,Choices PPO 1,False,Mifflin,False
+75729,PAS007,Choices PPO 1,False,Centre,False
+75729,PAS008,Choices PPO 2,False,Northampton,False
+75729,PAS008,Choices PPO 2,False,Carbon,False
+75729,PAS008,Choices PPO 2,False,Monroe,False
+75729,PAS008,Choices PPO 2,False,Schuylkill,False
+75729,PAS008,Choices PPO 2,False,Lehigh,False
+75729,PAS009,Choices PPO 3,False,Luzerne,False
+75729,PAS009,Choices PPO 3,False,Lackawanna,False
+75729,PAS009,Choices PPO 3,False,Wayne,False
+79279,PAS001,WPA Zone AA,False,Erie,False
+79279,PAS002,WPA Zone AC,False,Butler,False
+79279,PAS002,WPA Zone AC,False,Erie,False
+79279,PAS002,WPA Zone AC,False,Beaver,False
+79279,PAS002,WPA Zone AC,False,Westmoreland,False
+79279,PAS002,WPA Zone AC,False,Mercer,False
+79279,PAS002,WPA Zone AC,False,Armstrong,False
+79279,PAS002,WPA Zone AC,False,Washington,False
+79279,PAS002,WPA Zone AC,False,Allegheny,False
+79279,PAS003,WPA Zone AD,False,Greene,False
+79279,PAS003,WPA Zone AD,False,Bedford,False
+79279,PAS003,WPA Zone AD,False,Forest,False
+79279,PAS003,WPA Zone AD,False,Centre,True
+79279,PAS003,WPA Zone AD,False,Crawford,False
+79279,PAS003,WPA Zone AD,False,Clarion,False
+79279,PAS003,WPA Zone AD,False,Blair,False
+79279,PAS003,WPA Zone AD,False,Cambria,False
+79279,PAS003,WPA Zone AD,False,Fayette,False
+79279,PAS003,WPA Zone AD,False,Jefferson,False
+79279,PAS003,WPA Zone AD,False,Cameron,False
+79279,PAS003,WPA Zone AD,False,Indiana,False
+79279,PAS003,WPA Zone AD,False,Warren,False
+79279,PAS003,WPA Zone AD,False,Lawrence,False
+79279,PAS003,WPA Zone AD,False,Venango,False
+79279,PAS003,WPA Zone AD,False,McKean,False
+79279,PAS003,WPA Zone AD,False,Somerset,False
+79279,PAS003,WPA Zone AD,False,Huntingdon,False
+79279,PAS003,WPA Zone AD,False,Potter,False
+79279,PAS003,WPA Zone AD,False,Clearfield,False
+79279,PAS003,WPA Zone AD,False,Elk,False
+79279,PAS004,SEPA Zone AG,False,Bucks,False
+79279,PAS005,SEPA Zone AH,False,Chester,False
+79279,PAS006,SEPA Zone AI,False,Delaware,False
+79279,PAS007,SEPA Zone AJ,False,Montgomery,False
+79279,PAS008,SEPA Zone AK,False,Philadelphia,False
+79279,PAS009,WPA Zone AL,False,Potter,False
+79279,PAS009,WPA Zone AL,False,Mercer,False
+79279,PAS009,WPA Zone AL,False,Huntingdon,False
+79279,PAS009,WPA Zone AL,False,Cameron,False
+79279,PAS009,WPA Zone AL,False,Bedford,False
+79279,PAS009,WPA Zone AL,False,Cambria,False
+79279,PAS009,WPA Zone AL,False,Blair,False
+79279,PAS009,WPA Zone AL,False,Clearfield,False
+79279,PAS009,WPA Zone AL,False,Warren,False
+79279,PAS009,WPA Zone AL,False,Clarion,False
+79279,PAS009,WPA Zone AL,False,Forest,False
+79279,PAS009,WPA Zone AL,False,Venango,False
+79279,PAS009,WPA Zone AL,False,Greene,False
+79279,PAS009,WPA Zone AL,False,McKean,False
+79279,PAS009,WPA Zone AL,False,Jefferson,False
+79279,PAS009,WPA Zone AL,False,Crawford,False
+79279,PAS009,WPA Zone AL,False,Somerset,False
+79279,PAS009,WPA Zone AL,False,Centre,True
+79279,PAS009,WPA Zone AL,False,Elk,False
+79279,PAS010,WPA Zone AM,False,Greene,False
+79279,PAS010,WPA Zone AM,False,Lawrence,False
+79279,PAS010,WPA Zone AM,False,Crawford,False
+79279,PAS010,WPA Zone AM,False,Mercer,False
+79279,PAS010,WPA Zone AM,False,Jefferson,False
+79279,PAS010,WPA Zone AM,False,Indiana,False
+79279,PAS010,WPA Zone AM,False,Cambria,False
+79279,PAS010,WPA Zone AM,False,Cameron,False
+79279,PAS010,WPA Zone AM,False,Allegheny,False
+79279,PAS010,WPA Zone AM,False,Forest,False
+79279,PAS010,WPA Zone AM,False,Butler,False
+79279,PAS010,WPA Zone AM,False,Bedford,False
+79279,PAS010,WPA Zone AM,False,Potter,False
+79279,PAS010,WPA Zone AM,False,Venango,False
+79279,PAS010,WPA Zone AM,False,Warren,False
+79279,PAS010,WPA Zone AM,False,Huntingdon,False
+79279,PAS010,WPA Zone AM,False,Armstrong,False
+79279,PAS010,WPA Zone AM,False,Elk,False
+79279,PAS010,WPA Zone AM,False,Washington,False
+79279,PAS010,WPA Zone AM,False,Westmoreland,False
+79279,PAS010,WPA Zone AM,False,Fayette,False
+79279,PAS010,WPA Zone AM,False,Blair,False
+79279,PAS010,WPA Zone AM,False,Somerset,False
+79279,PAS010,WPA Zone AM,False,Centre,True
+79279,PAS010,WPA Zone AM,False,Beaver,False
+79279,PAS010,WPA Zone AM,False,Clarion,False
+79279,PAS010,WPA Zone AM,False,McKean,False
+79279,PAS010,WPA Zone AM,False,Clearfield,False
+79279,PAS011,CPA Zone F,False,Northampton,False
+79279,PAS011,CPA Zone F,False,Lehigh,False
+79279,PAS011,CPA Zone F,False,Dauphin,False
+79279,PAS011,CPA Zone F,False,Mifflin,False
+79279,PAS011,CPA Zone F,False,Lebanon,False
+79279,PAS011,CPA Zone F,False,Cumberland,False
+79279,PAS011,CPA Zone F,False,Northumberland,False
+79279,PAS011,CPA Zone F,False,Schuylkill,False
+79279,PAS011,CPA Zone F,False,Berks,False
+79279,PAS011,CPA Zone F,False,Columbia,False
+79279,PAS011,CPA Zone F,False,Franklin,False
+79279,PAS011,CPA Zone F,False,Fulton,False
+79279,PAS011,CPA Zone F,False,Juniata,False
+79279,PAS011,CPA Zone F,False,Montour,False
+79279,PAS011,CPA Zone F,False,Snyder,False
+79279,PAS011,CPA Zone F,False,York,False
+79279,PAS011,CPA Zone F,False,Union,False
+79279,PAS011,CPA Zone F,False,Centre,True
+79279,PAS011,CPA Zone F,False,Adams,False
+79279,PAS011,CPA Zone F,False,Perry,False
+79279,PAS011,CPA Zone F,False,Lancaster,False
+79279,PAS012,WPA Zone I,False,Washington,False
+79279,PAS012,WPA Zone I,False,Warren,False
+79279,PAS012,WPA Zone I,False,Cambria,False
+79279,PAS012,WPA Zone I,False,Westmoreland,False
+79279,PAS012,WPA Zone I,False,Clarion,False
+79279,PAS012,WPA Zone I,False,Somerset,False
+79279,PAS012,WPA Zone I,False,Crawford,False
+79279,PAS012,WPA Zone I,False,Forest,False
+79279,PAS012,WPA Zone I,False,Fayette,False
+79279,PAS012,WPA Zone I,False,Armstrong,False
+79279,PAS012,WPA Zone I,False,Erie,False
+79279,PAS012,WPA Zone I,False,Greene,False
+79279,PAS012,WPA Zone I,False,Beaver,False
+79279,PAS012,WPA Zone I,False,Blair,False
+79279,PAS012,WPA Zone I,False,Butler,False
+79279,PAS012,WPA Zone I,False,Allegheny,False
+79279,PAS013,WPA Zone J,False,Fayette,False
+79279,PAS013,WPA Zone J,False,Allegheny,False
+79279,PAS013,WPA Zone J,False,Lawrence,False
+79279,PAS013,WPA Zone J,False,Indiana,False
+79279,PAS013,WPA Zone J,False,Washington,False
+79279,PAS013,WPA Zone J,False,Beaver,False
+79279,PAS013,WPA Zone J,False,Armstrong,False
+79279,PAS013,WPA Zone J,False,Westmoreland,False
+79279,PAS013,WPA Zone J,False,Butler,False
+79279,PAS014,WPA Zone L,False,Allegheny,False
+79279,PAS014,WPA Zone L,False,Erie,False
+79279,PAS014,WPA Zone L,False,Washington,False
+79279,PAS014,WPA Zone L,False,Butler,False
+79279,PAS014,WPA Zone L,False,Westmoreland,False
+79279,PAS015,CPA Zone N,False,Schuylkill,False
+79279,PAS015,CPA Zone N,False,Northampton,False
+79279,PAS015,CPA Zone N,False,Lehigh,False
+79279,PAS016,CPA Zone O,False,Adams,False
+79279,PAS016,CPA Zone O,False,Berks,False
+79279,PAS016,CPA Zone O,False,Franklin,False
+79279,PAS016,CPA Zone O,False,Cumberland,False
+79279,PAS016,CPA Zone O,False,Lebanon,False
+79279,PAS016,CPA Zone O,False,Perry,False
+79279,PAS016,CPA Zone O,False,Lancaster,False
+79279,PAS016,CPA Zone O,False,Dauphin,False
+79279,PAS016,CPA Zone O,False,York,False
+79279,PAS017,NEPA Zone Q,False,Carbon,False
+79279,PAS017,NEPA Zone Q,False,Lackawanna,False
+79279,PAS017,NEPA Zone Q,False,Monroe,False
+79279,PAS018,NEPA Zone U,False,Monroe,False
+79279,PAS018,NEPA Zone U,False,Lackawanna,False
+79279,PAS018,NEPA Zone U,False,Luzerne,False
+79279,PAS018,NEPA Zone U,False,Susquehanna,False
+79279,PAS018,NEPA Zone U,False,Carbon,False
+79279,PAS018,NEPA Zone U,False,Sullivan,False
+79279,PAS018,NEPA Zone U,False,Pike,False
+79279,PAS018,NEPA Zone U,False,Clinton,False
+79279,PAS018,NEPA Zone U,False,Bradford,False
+79279,PAS018,NEPA Zone U,False,Wayne,False
+79279,PAS018,NEPA Zone U,False,Tioga,False
+79279,PAS018,NEPA Zone U,False,Lycoming,False
+79279,PAS018,NEPA Zone U,False,Wyoming,False
+79279,PAS019,CPA Zone X,False,York,False
+79279,PAS019,CPA Zone X,False,Dauphin,False
+79279,PAS019,CPA Zone X,False,Berks,False
+79279,PAS019,CPA Zone X,False,Cumberland,False
+79279,PAS019,CPA Zone X,False,Lancaster,False
+79279,PAS019,CPA Zone X,False,Adams,False
+79279,PAS019,CPA Zone X,False,Perry,False
+79279,PAS019,CPA Zone X,False,Lebanon,False
+79279,PAS019,CPA Zone X,False,Franklin,False
+79279,PAS020,WPA Zone Y,False,Butler,False
+79279,PAS020,WPA Zone Y,False,Washington,False
+79279,PAS020,WPA Zone Y,False,Erie,False
+79279,PAS020,WPA Zone Y,False,Allegheny,False
+79279,PAS020,WPA Zone Y,False,Mercer,False
+79279,PAS020,WPA Zone Y,False,Westmoreland,False
+79279,PAS021,SEPA Zone Z,False,Bucks,False
+79279,PAS021,SEPA Zone Z,False,Chester,False
+79279,PAS021,SEPA Zone Z,False,Delaware,False
+79279,PAS021,SEPA Zone Z,False,Montgomery,False
+79279,PAS021,SEPA Zone Z,False,Philadelphia,False
+79962,PAS001,WPA Zone AA,False,Erie,False
+79962,PAS002,WPA Zone AC,False,Mercer,False
+79962,PAS002,WPA Zone AC,False,Washington,False
+79962,PAS002,WPA Zone AC,False,Westmoreland,False
+79962,PAS002,WPA Zone AC,False,Beaver,False
+79962,PAS002,WPA Zone AC,False,Erie,False
+79962,PAS002,WPA Zone AC,False,Butler,False
+79962,PAS002,WPA Zone AC,False,Allegheny,False
+79962,PAS002,WPA Zone AC,False,Armstrong,False
+79962,PAS003,WPA Zone AD,False,Crawford,False
+79962,PAS003,WPA Zone AD,False,Fayette,False
+79962,PAS003,WPA Zone AD,False,Indiana,False
+79962,PAS003,WPA Zone AD,False,Bedford,False
+79962,PAS003,WPA Zone AD,False,Somerset,False
+79962,PAS003,WPA Zone AD,False,Potter,False
+79962,PAS003,WPA Zone AD,False,Clearfield,False
+79962,PAS003,WPA Zone AD,False,Huntingdon,False
+79962,PAS003,WPA Zone AD,False,Cameron,False
+79962,PAS003,WPA Zone AD,False,Centre,True
+79962,PAS003,WPA Zone AD,False,Clarion,False
+79962,PAS003,WPA Zone AD,False,Cambria,False
+79962,PAS003,WPA Zone AD,False,Elk,False
+79962,PAS003,WPA Zone AD,False,Venango,False
+79962,PAS003,WPA Zone AD,False,Blair,False
+79962,PAS003,WPA Zone AD,False,Greene,False
+79962,PAS003,WPA Zone AD,False,Lawrence,False
+79962,PAS003,WPA Zone AD,False,Jefferson,False
+79962,PAS003,WPA Zone AD,False,Forest,False
+79962,PAS003,WPA Zone AD,False,Warren,False
+79962,PAS003,WPA Zone AD,False,McKean,False
+79962,PAS004,SEPA Zone AG,False,Bucks,False
+79962,PAS005,SEPA Zone AH,False,Chester,False
+79962,PAS006,SEPA Zone AI,False,Delaware,False
+79962,PAS007,SEPA Zone AJ,False,Montgomery,False
+79962,PAS008,SEPA Zone AK,False,Philadelphia,False
+79962,PAS009,WPA Zone AL,False,Crawford,False
+79962,PAS009,WPA Zone AL,False,Cambria,False
+79962,PAS009,WPA Zone AL,False,Warren,False
+79962,PAS009,WPA Zone AL,False,Elk,False
+79962,PAS009,WPA Zone AL,False,McKean,False
+79962,PAS009,WPA Zone AL,False,Huntingdon,False
+79962,PAS009,WPA Zone AL,False,Clarion,False
+79962,PAS009,WPA Zone AL,False,Clearfield,False
+79962,PAS009,WPA Zone AL,False,Potter,False
+79962,PAS009,WPA Zone AL,False,Cameron,False
+79962,PAS009,WPA Zone AL,False,Venango,False
+79962,PAS009,WPA Zone AL,False,Somerset,False
+79962,PAS009,WPA Zone AL,False,Blair,False
+79962,PAS009,WPA Zone AL,False,Forest,False
+79962,PAS009,WPA Zone AL,False,Mercer,False
+79962,PAS009,WPA Zone AL,False,Greene,False
+79962,PAS009,WPA Zone AL,False,Jefferson,False
+79962,PAS009,WPA Zone AL,False,Bedford,False
+79962,PAS009,WPA Zone AL,False,Centre,True
+79962,PAS010,WPA Zone AM,False,Allegheny,False
+79962,PAS010,WPA Zone AM,False,Venango,False
+79962,PAS010,WPA Zone AM,False,Cameron,False
+79962,PAS010,WPA Zone AM,False,Clearfield,False
+79962,PAS010,WPA Zone AM,False,Greene,False
+79962,PAS010,WPA Zone AM,False,Crawford,False
+79962,PAS010,WPA Zone AM,False,Clarion,False
+79962,PAS010,WPA Zone AM,False,Bedford,False
+79962,PAS010,WPA Zone AM,False,Huntingdon,False
+79962,PAS010,WPA Zone AM,False,Potter,False
+79962,PAS010,WPA Zone AM,False,Beaver,False
+79962,PAS010,WPA Zone AM,False,Indiana,False
+79962,PAS010,WPA Zone AM,False,Washington,False
+79962,PAS010,WPA Zone AM,False,Armstrong,False
+79962,PAS010,WPA Zone AM,False,Fayette,False
+79962,PAS010,WPA Zone AM,False,Jefferson,False
+79962,PAS010,WPA Zone AM,False,Somerset,False
+79962,PAS010,WPA Zone AM,False,Westmoreland,False
+79962,PAS010,WPA Zone AM,False,Warren,False
+79962,PAS010,WPA Zone AM,False,Butler,False
+79962,PAS010,WPA Zone AM,False,Cambria,False
+79962,PAS010,WPA Zone AM,False,Forest,False
+79962,PAS010,WPA Zone AM,False,Centre,True
+79962,PAS010,WPA Zone AM,False,McKean,False
+79962,PAS010,WPA Zone AM,False,Lawrence,False
+79962,PAS010,WPA Zone AM,False,Blair,False
+79962,PAS010,WPA Zone AM,False,Elk,False
+79962,PAS010,WPA Zone AM,False,Mercer,False
+79962,PAS011,CPA Zone F,False,Berks,False
+79962,PAS011,CPA Zone F,False,Schuylkill,False
+79962,PAS011,CPA Zone F,False,Mifflin,False
+79962,PAS011,CPA Zone F,False,Adams,False
+79962,PAS011,CPA Zone F,False,Cumberland,False
+79962,PAS011,CPA Zone F,False,Lehigh,False
+79962,PAS011,CPA Zone F,False,Juniata,False
+79962,PAS011,CPA Zone F,False,Northumberland,False
+79962,PAS011,CPA Zone F,False,Montour,False
+79962,PAS011,CPA Zone F,False,Fulton,False
+79962,PAS011,CPA Zone F,False,Columbia,False
+79962,PAS011,CPA Zone F,False,Franklin,False
+79962,PAS011,CPA Zone F,False,Dauphin,False
+79962,PAS011,CPA Zone F,False,Snyder,False
+79962,PAS011,CPA Zone F,False,Centre,True
+79962,PAS011,CPA Zone F,False,Lancaster,False
+79962,PAS011,CPA Zone F,False,Lebanon,False
+79962,PAS011,CPA Zone F,False,Union,False
+79962,PAS011,CPA Zone F,False,Northampton,False
+79962,PAS011,CPA Zone F,False,York,False
+79962,PAS011,CPA Zone F,False,Perry,False
+79962,PAS012,WPA Zone I,False,Armstrong,False
+79962,PAS012,WPA Zone I,False,Cambria,False
+79962,PAS012,WPA Zone I,False,Westmoreland,False
+79962,PAS012,WPA Zone I,False,Butler,False
+79962,PAS012,WPA Zone I,False,Crawford,False
+79962,PAS012,WPA Zone I,False,Beaver,False
+79962,PAS012,WPA Zone I,False,Warren,False
+79962,PAS012,WPA Zone I,False,Forest,False
+79962,PAS012,WPA Zone I,False,Erie,False
+79962,PAS012,WPA Zone I,False,Blair,False
+79962,PAS012,WPA Zone I,False,Greene,False
+79962,PAS012,WPA Zone I,False,Washington,False
+79962,PAS012,WPA Zone I,False,Fayette,False
+79962,PAS012,WPA Zone I,False,Allegheny,False
+79962,PAS012,WPA Zone I,False,Somerset,False
+79962,PAS012,WPA Zone I,False,Clarion,False
+79962,PAS013,WPA Zone J,False,Fayette,False
+79962,PAS013,WPA Zone J,False,Westmoreland,False
+79962,PAS013,WPA Zone J,False,Allegheny,False
+79962,PAS013,WPA Zone J,False,Butler,False
+79962,PAS013,WPA Zone J,False,Beaver,False
+79962,PAS013,WPA Zone J,False,Lawrence,False
+79962,PAS013,WPA Zone J,False,Indiana,False
+79962,PAS013,WPA Zone J,False,Washington,False
+79962,PAS013,WPA Zone J,False,Armstrong,False
+79962,PAS014,WPA Zone L,False,Butler,False
+79962,PAS014,WPA Zone L,False,Westmoreland,False
+79962,PAS014,WPA Zone L,False,Allegheny,False
+79962,PAS014,WPA Zone L,False,Erie,False
+79962,PAS014,WPA Zone L,False,Washington,False
+79962,PAS015,CPA Zone N,False,Schuylkill,False
+79962,PAS015,CPA Zone N,False,Lehigh,False
+79962,PAS015,CPA Zone N,False,Northampton,False
+79962,PAS016,CPA Zone O,False,Lancaster,False
+79962,PAS016,CPA Zone O,False,Berks,False
+79962,PAS016,CPA Zone O,False,Dauphin,False
+79962,PAS016,CPA Zone O,False,Adams,False
+79962,PAS016,CPA Zone O,False,Lebanon,False
+79962,PAS016,CPA Zone O,False,York,False
+79962,PAS016,CPA Zone O,False,Cumberland,False
+79962,PAS016,CPA Zone O,False,Franklin,False
+79962,PAS016,CPA Zone O,False,Perry,False
+79962,PAS017,NEPA Zone Q,False,Carbon,False
+79962,PAS017,NEPA Zone Q,False,Monroe,False
+79962,PAS017,NEPA Zone Q,False,Lackawanna,False
+79962,PAS018,NEPA Zone U,False,Bradford,False
+79962,PAS018,NEPA Zone U,False,Monroe,False
+79962,PAS018,NEPA Zone U,False,Lackawanna,False
+79962,PAS018,NEPA Zone U,False,Luzerne,False
+79962,PAS018,NEPA Zone U,False,Wyoming,False
+79962,PAS018,NEPA Zone U,False,Susquehanna,False
+79962,PAS018,NEPA Zone U,False,Clinton,False
+79962,PAS018,NEPA Zone U,False,Tioga,False
+79962,PAS018,NEPA Zone U,False,Pike,False
+79962,PAS018,NEPA Zone U,False,Lycoming,False
+79962,PAS018,NEPA Zone U,False,Sullivan,False
+79962,PAS018,NEPA Zone U,False,Wayne,False
+79962,PAS018,NEPA Zone U,False,Carbon,False
+79962,PAS019,CPA Zone X,False,York,False
+79962,PAS019,CPA Zone X,False,Franklin,False
+79962,PAS019,CPA Zone X,False,Berks,False
+79962,PAS019,CPA Zone X,False,Cumberland,False
+79962,PAS019,CPA Zone X,False,Perry,False
+79962,PAS019,CPA Zone X,False,Dauphin,False
+79962,PAS019,CPA Zone X,False,Adams,False
+79962,PAS019,CPA Zone X,False,Lebanon,False
+79962,PAS019,CPA Zone X,False,Lancaster,False
+79962,PAS020,WPA Zone Y,False,Allegheny,False
+79962,PAS020,WPA Zone Y,False,Erie,False
+79962,PAS020,WPA Zone Y,False,Washington,False
+79962,PAS020,WPA Zone Y,False,Mercer,False
+79962,PAS020,WPA Zone Y,False,Butler,False
+79962,PAS020,WPA Zone Y,False,Westmoreland,False
+79962,PAS021,SEPA Zone Z,False,Philadelphia,False
+79962,PAS021,SEPA Zone Z,False,Bucks,False
+79962,PAS021,SEPA Zone Z,False,Chester,False
+79962,PAS021,SEPA Zone Z,False,Montgomery,False
+79962,PAS021,SEPA Zone Z,False,Delaware,False
+93909,PAS001,JHP HMO,False,Schuylkill,False
+93909,PAS001,JHP HMO,False,Lehigh,False
+93909,PAS001,JHP HMO,False,Carbon,False
+93909,PAS001,JHP HMO,False,Delaware,False
+93909,PAS001,JHP HMO,False,Northampton,False
+93909,PAS001,JHP HMO,False,Bucks,False
+93909,PAS001,JHP HMO,False,Philadelphia,False
+93909,PAS001,JHP HMO,False,Montgomery,False
+93909,PAS001,JHP HMO,False,Monroe,False
+98517,PAS001,Oscar Pennsylvania,False,Lancaster,False
+98517,PAS001,Oscar Pennsylvania,False,Delaware,False
+98517,PAS001,Oscar Pennsylvania,False,Northampton,False
+98517,PAS001,Oscar Pennsylvania,False,Bucks,False
+98517,PAS001,Oscar Pennsylvania,False,Lackawanna,False
+98517,PAS001,Oscar Pennsylvania,False,Carbon,False
+98517,PAS001,Oscar Pennsylvania,False,Monroe,False
+98517,PAS001,Oscar Pennsylvania,False,Philadelphia,False
+98517,PAS001,Oscar Pennsylvania,False,Montgomery,False
+98517,PAS001,Oscar Pennsylvania,False,Luzerne,False
+98517,PAS001,Oscar Pennsylvania,False,Lehigh,False
+98517,PAS001,Oscar Pennsylvania,False,Wyoming,False
+98517,PAS001,Oscar Pennsylvania,False,Chester,False

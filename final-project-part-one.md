@@ -5,7 +5,9 @@
 **Course:** Telling Stories with Data  
 **Status:** Proposal and initial sketches, November 2026
 
-[Portfolio home](README.md) | [Outline](#1-project-outline) | [Initial sketches](#2-initial-sketches) | [Data](#3-data-sources-and-analysis-plan) | [Method and medium](#4-method-and-medium) | [References](#references)
+| [Home](README) | [Data Viz Examples](dataviz-examples) | [Critique by Design](critique-by-design) | [Final Project I](final-project-part-one) | [Final Project II](final-project-part-two) | [Final Project III](final-project-part-three) |
+
+**On this page:** [Outline](#1-project-outline) | [Initial sketches](#2-initial-sketches) | [Data](#3-data-sources-and-analysis-plan) | [Method and medium](#4-method-and-medium) | [References](#references)
 
 > **One-sentence story:** People aren't moved by insurance jargon or by warnings about risk. They're moved by the number that's about them: *"What would I actually pay this year?"*
 
@@ -107,27 +109,27 @@ This is the answer to "what should we show?" Instead of a table of plan terms, i
 
 ### Primary data source 1: Medical Expenditure Panel Survey (MEPS)
 
-The **2023 MEPS Full Year Consolidated File (HC-251)**, published by the Agency for Healthcare Research and Quality, provides publicly downloadable individual-level demographic characteristics, annual healthcare expenditure measures, and sampling weights. I will use it to calculate weighted annual spending distributions by age group (Figure 3) and to define realistic care scenarios for the plan comparison (Figures 1 and 5). Key fields: age (`AGE23X`), total expenditure (`TOTEXP23`), and person weight (`PERWT23F`); the out-of-pocket field will be confirmed in the codebook. The file is also available in Excel format, which can be loaded directly into Tableau.
+The **2023 MEPS Full Year Consolidated File (HC-251)**, published by the Agency for Healthcare Research and Quality, provides publicly downloadable individual-level demographic characteristics, annual healthcare expenditure measures, and sampling weights. I will use it to calculate weighted annual spending distributions by age group (Figure 3) and to define realistic care scenarios for the plan comparison (Figures 1 and 5). Key fields: age (`AGE23X`), total spending (`TOTEXP23`), out-of-pocket spending (`TOTSLF23`), emergency-room visits (`ERTOT23`), hospital stays (`IPDIS23`), and person weight (`PERWT23F`). The extract covers 18,919 people, including 1,566 aged 22–30.
 
 - [MEPS HC-251 public-use dataset](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-251&prfricon=yes)
 - [HC-251 documentation and file formats](https://meps.ahrq.gov/data_stats/download_data/pufs/h251/h251doc.shtml)
 
 ### Primary data source 2: CMS Marketplace Public Use Files
 
-The **2026 Centers for Medicare & Medicaid Services Marketplace Public Use Files** include downloadable files describing plan attributes, premiums, and benefits/cost-sharing features. I will pick two real plans in the same area, one with a lower premium and higher deductible and one with the opposite, and use their premiums, deductibles, coinsurance and out-of-pocket maximums to calculate the cost lines in Figure 1 and, applied to each MEPS respondent's spending, the results in Figure 5. If I use Pennsylvania plans, they come from the separate State-Based Marketplace files.
+The **2026 Centers for Medicare & Medicaid Services State-Based Marketplace Public Use Files for Pennsylvania** describe every individual-market plan sold in the state: deductibles, coinsurance, out-of-pocket maximums and premiums by age and region. The extract holds 320 medical plans and their monthly premiums for ages 22–30. I will pick two real plans in the same area (Allegheny County), one with a lower premium and higher deductible and one with the opposite, and use their premiums, deductibles, coinsurance and out-of-pocket maximums to calculate the cost lines in Figure 1 and, applied to each MEPS respondent's spending, the results in Figure 5.
 
 - [CMS Marketplace Public Use Files](https://www.cms.gov/marketplace/resources/data/public-use-files)
 - [CMS State-Based Marketplace Public Use Files](https://www.cms.gov/marketplace/resources/data/state-based-public-use-files)
 
 ### Primary data source 3: FINRA National Financial Capability Study
 
-The **FINRA Investor Education Foundation's 2024 National Financial Capability Study (NFCS)** offers a publicly accessible survey dataset, questionnaire, and supporting documentation. I will compare age groups (`A3a`) and income bands (`A8`) on two indicators: skipping a doctor or clinic visit because of cost in the past 12 months (`H30_3`) and confidence in coming up with $2,000 for an unexpected need within a month (`J20`). This is my own segmentation analysis for Figure 4: it shows who has the least financial cushion, and therefore who most needs to see their out-of-pocket exposure.
+The **FINRA Investor Education Foundation's 2024 National Financial Capability Study (NFCS)** offers a publicly accessible survey dataset, questionnaire, and supporting documentation. I will compare age groups (`A3Ar_w`) and income bands (`A8_2021`), using the national weight (`wgt_n2`), on two indicators: skipping a doctor or clinic visit because of cost in the past 12 months (`H30_3`) and confidence in coming up with $2,000 for an unexpected need within a month (`J20`). This is my own segmentation analysis for Figure 4: it shows who has the least financial cushion, and therefore who most needs to see their out-of-pocket exposure.
 
 - [2024 NFCS public data, questionnaire, and methodology](https://www.finrafoundation.org/nfcs-data-and-downloads)
 
 ### Published behavioral research
 
-Three published studies supply the evidence for Figures 2 and 5. I will recreate the key figures in a small CSV in this repository, with citations.
+Three published studies supply the evidence for Figures 2 and 5. The key figures are recreated, with population and source, in `data/published_findings.csv`.
 
 - **Loewenstein et al. (2013):** among privately insured U.S. adults, only **14%** understood all four basic concepts (deductible, copay, coinsurance, out-of-pocket maximum). [CMU news release](https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html)
 - **Bhargava, Loewenstein & Sydnor (2017), "Choose to Lose":** **61%** of employees at a large U.S. firm chose a financially dominated plan, and the main driver was a lack of understanding of the plans, not the size of the menu. [Journal article](https://doi.org/10.1093/qje/qjx011)
@@ -135,16 +137,16 @@ Three published studies supply the evidence for Figures 2 and 5. I will recreate
 
 ### Proposed analytical workflow
 
-1. Download MEPS HC-251 and verify relevant variable definitions. Create a tidy file with age, annual spending fields, and person weights; estimate appropriately weighted distributions and percentiles.
-2. Download the 2024 NFCS survey plus codebook. Check coding, missingness, and applicable weights before comparing age groups and financial circumstances.
-3. Download the applicable 2026 CMS Marketplace files. Identify geographically comparable plans using documented joins; inspect benefits and provider/network differences.
+1. ✅ Download MEPS HC-251, the 2024 NFCS and the 2026 Pennsylvania plan files; extract the needed variables and document them (done, see the data folder).
+2. Estimate weighted spending distributions by age (MEPS) and weighted shares by age and income (NFCS), excluding "don't know" and "prefer not to say" answers.
+3. Choose two comparable plans in the same rating area: one lower-premium/higher-deductible, one the opposite.
 4. Compute **illustrative**, clearly labeled annual total costs for the selected plans under explicit healthcare utilization assumptions. Keep MEPS expenditure statistics distinct from actual Marketplace cost-sharing calculations.
 5. Create Tableau visualizations: a plan-cost scenario chart, weighted expenditure distributions, and subgroup comparisons. Use informative annotations and sources, including assumptions and denominators.
 6. Build Figure 5 by applying each plan's terms to every MEPS respondent aged 22–30, and design a future A/B test comparing a standard plan table with that view.
 
 ### Access and reproducibility status
 
-Extracts of all three datasets, keeping only the variables this project uses, are in the [data folder](data/README.md) of this repository, together with a data dictionary: MEPS 2023 (`data/meps_2023_extract.csv`), 2026 Pennsylvania plans and premiums (`data/cms_pa_2026_plans.csv`, `data/cms_pa_2026_rates_age22_30.csv`), and NFCS 2024 (`data/nfcs_2024_extract.csv`). The published figures used in Figure 2 are recreated in `data/published_findings.csv`. The plan-cost calculation for Figures 1 and 5 will be added in Part II.
+Extracts of all three datasets, keeping only the variables this project uses, are in the [data folder](data/README.md) of this repository, together with a data dictionary: MEPS 2023 (`data/meps_2023_extract.csv`), 2026 Pennsylvania plans, premiums and service areas (`data/cms_pa_2026_plans.csv`, `data/cms_pa_2026_rates_age22_30.csv`, `data/cms_pa_2026_service_areas.csv`), and NFCS 2024 (`data/nfcs_2024_extract.csv`). The published figures used in Figure 2 are recreated in `data/published_findings.csv`. The plan-cost calculation for Figures 1 and 5 will be added in Part II.
 
 ## 4. Method and Medium
 
@@ -164,7 +166,7 @@ I plan to build a **Tableau Public data story** with linked worksheets and dashb
 1. Agency for Healthcare Research and Quality. *Medical Expenditure Panel Survey: 2023 Full Year Consolidated File (HC-251).* https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-251&prfricon=yes
 2. Bhargava, S., Loewenstein, G., & Sydnor, J. (2017). “Choose to Lose: Health Plan Choices from a Menu with Dominated Option.” *The Quarterly Journal of Economics, 132*(3), 1319–1372. https://doi.org/10.1093/qje/qjx011
 3. Carnegie Mellon University. (2013). *Consumers Don't Understand Health Insurance, Carnegie Mellon Research Shows.* https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html
-4. Centers for Medicare & Medicaid Services. *Marketplace Public Use Files.* https://www.cms.gov/marketplace/resources/data/public-use-files
+4. Centers for Medicare & Medicaid Services. (2026). *State-Based Marketplace Public Use Files: Pennsylvania, plan year 2026.* https://www.cms.gov/marketplace/resources/data/state-based-public-use-files
 5. FINRA Investor Education Foundation. *National Financial Capability Study: Data and Downloads.* https://www.finrafoundation.org/nfcs-data-and-downloads
 6. Samek, A., & Sydnor, J. R. (2020). "Impact of Consequence Information on Insurance Choice." NBER Working Paper No. 28003. https://doi.org/10.3386/w28003
 
@@ -172,4 +174,4 @@ I plan to build a **Tableau Public data story** with linked worksheets and dashb
 
 I used ChatGPT and Claude to help brainstorm and scope the research question, organize the narrative, identify and verify candidate public data sources, draft and edit this proposal, and draw the sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. No original statistical analysis is presented as completed in this Part I proposal.
 
-[Back to portfolio](README.md) | [Back to top](#final-project-part-i-what-should-we-show)
+[Back to portfolio](README) | [Back to top](#final-project-part-i-what-should-we-show)
