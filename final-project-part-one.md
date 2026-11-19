@@ -144,7 +144,7 @@ Three published studies supply the evidence for Figures 2 and 5. I will recreate
 
 ### Access and reproducibility status
 
-All three datasets are publicly downloadable from the links above, and the variables needed have been identified. The published figures used in Figure 2 are recreated in [`data/published_findings.csv`](data/published_findings.csv); see the [data folder](data/README.md) for an overview. Cleaned extracts, the plan-cost calculation for Figures 1 and 5, and a short data dictionary will be added to this repository in Part II.
+Extracts of all three datasets, keeping only the variables this project uses, are in the [data folder](data/README.md) of this repository, together with a data dictionary: MEPS 2023 (`data/meps_2023_extract.csv`), 2026 Pennsylvania plans and premiums (`data/cms_pa_2026_plans.csv`, `data/cms_pa_2026_rates_age22_30.csv`), and NFCS 2024 (`data/nfcs_2024_extract.csv`). The published figures used in Figure 2 are recreated in `data/published_findings.csv`. The plan-cost calculation for Figures 1 and 5 will be added in Part II.
 
 ## 4. Method and Medium
 
