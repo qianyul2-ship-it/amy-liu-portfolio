@@ -7,7 +7,7 @@
 
 [Portfolio home](README.md) | [Outline](#1-project-outline) | [Initial sketches](#2-initial-sketches) | [Data](#3-data-sources-and-analysis-plan) | [Method and medium](#4-method-and-medium) | [References](#references)
 
-> **One-sentence story:** To design useful insurance information, first identify the consumer's decision, uncertainty, and financial context. Then show the evidence most relevant to that decision and test whether the presentation actually helps.
+> **One-sentence story:** People aren't moved by insurance jargon or by warnings about risk. They're moved by the number that's about them: *"What would I actually pay this year?"*
 
 ## 1. Project Outline
 
@@ -15,7 +15,7 @@
 
 Health insurance is one of the first complicated financial decisions many young adults encounter after graduation. A plan may advertise an attractive monthly premium, yet the amount a person pays can also depend on deductibles, copayments, coinsurance, provider networks, and out-of-pocket limits. For students accustomed to university health coverage, comparing plans through an employer or the individual insurance marketplace can be unfamiliar. I want to tell a data-driven story about why a seemingly simple health insurance decision is difficult and how clearer information might help. Research involving Carnegie Mellon scholars has documented confusion about insurance terminology and financially disadvantageous plan choices. This makes health insurance a practical case study in information design.
 
-My central question is **how a product team can determine which information to show a particular consumer**. Rather than assuming every consumer needs a longer explanation of policy terms, I will explore how a decision-maker's context and information gaps can guide the presentation. I plan to combine published behavioral research with public data on medical expenditures, insurance plan attributes, and financial circumstances. The narrative moves from an audience-facing plan-choice exercise to evidence of misunderstanding, then proposes a three-part information selection framework: **Relevance, Uncertainty, and Decision Impact**. Finally, I will connect the evidence to a proposed information-prioritization method and explain how its effectiveness could be tested. The project aims to make insurance choices more understandable for classmates while demonstrating a transferable method for evidence-based product design.
+My central question is **how a product team can determine which information to show a particular consumer**. Rather than assuming every consumer needs a longer explanation of policy terms, I will explore how a decision-maker's context and information gaps can guide the presentation. I plan to combine published behavioral research with public data on medical expenditures, insurance plan attributes, and financial circumstances. The narrative moves from an audience-facing plan-choice exercise to evidence of misunderstanding, then proposes a three-part information selection framework: **Relevance, Uncertainty, and Decision Impact**. My answer, built up through the story, is that the most persuasive information is the number that is about the viewer: *what would I actually pay this year?* The project aims to make insurance choices more understandable for classmates while demonstrating a transferable method for evidence-based product design, one that applies equally to an insurance app or a local-business page.
 
 ### Audience and communication goals
 
@@ -23,28 +23,28 @@ My central question is **how a product team can determine which information to s
 
 The audience should leave knowing that:
 
-1. A monthly premium is only one part of a health insurance plan's possible annual cost.
-2. Different consumers may require different information because their healthcare needs, financial exposure, and uncertainties differ.
-3. A useful comparison should prioritize relevant, trustworthy information and then measure whether it improves comprehension and decisions.
+1. **As users:** the monthly premium is only part of what a plan costs; the number that matters is the total for a year like yours.
+2. **As future designers:** people aren't moved by jargon or by risk warnings, but by a personal number. Different people need different numbers first, depending on their spending and financial cushion.
+3. **As evidence-minded builders:** decide what to show using three tests (Relevance, Uncertainty, Decision Impact), then verify with an experiment.
 
-**Call to action for consumers:** Compare annual costs across plausible usage scenarios, examine the out-of-pocket maximum, and verify provider-network and benefit rules.  
-**Call to action for product designers:** Identify the user's actual decision and information gap before deciding which statistics deserve prominence.
+**Call to action for consumers:** Before you enroll, find your plan's out-of-pocket maximum and price out one scenario like yours (e.g., one ER visit).  
+**Call to action for product designers:** Don't explain the terms. Show users what they would pay, starting with the uncertainty that matters most to them.
 
 ### Story structure: Four acts
 
 | Act | Audience question | Story and planned visualization |
 | --- | --- | --- |
-| **Act 1. The Hook: Which plan would you choose?** | Which option looks cheaper? | Show two comparable health insurance plan cards with premiums and deductibles, ask for an initial choice, then reveal a chart of total annual costs across clearly stated care scenarios. Marketplace plans will be labeled accurately and will not be represented as employer benefits. |
-| **Act 2. The Problem: Why is the choice hard?** | What makes seemingly straightforward decisions go wrong? | Use clearly attributed published research on insurance comprehension and financially dominated choices. Explain study populations and distinguish results from current student behavior. |
+| **Act 1. The Hook: Which plan would you choose?** | Which option looks cheaper? | Show two comparable health insurance plan cards with premiums and deductibles, ask for an initial choice, then reveal a chart of total annual costs across care scenarios. |
+| **Act 2. The Problem: Why is the choice hard?** | What makes seemingly straightforward decisions go wrong? | Big-number visuals from published research: only 14% of insured adults understood four basic terms, and 61% of employees in one firm chose a financially dominated plan. |
 | **Act 3. The Method: What should we show?** | How can we identify the information a consumer needs? | Combine age-group medical-spending distributions (MEPS), indicators of financial resilience (NFCS), and insurance-literacy findings to build an evidence-to-message matrix. Introduce **Relevance, Uncertainty, Decision Impact**. |
-| **Act 4. The Design: From data to a decision aid** | What would an improved product actually display? | Contrast a jargon-heavy plan comparison with transparent, scenario-based annual costs. Sketch a user-context or care-scenario selector and propose an experiment to test comprehension, decision quality, and trust. |
+| **Act 4. The Answer: What would I actually pay?** | What should a product show instead of the plan table? | A consequence graph: 100 MEPS respondents aged 22–30, each placed at what they would have paid for the year under Plan A and Plan B. Shows the typical year, the worst case, and for how many people each plan is cheaper. Ends with the call to action and a proposed A/B test. |
 
 ### Story arc
 
 **Setup:** A graduating student encounters unfamiliar health insurance options.  
 **Tension:** A cheaper premium looks attractive, but a high deductible and other cost-sharing terms may change the overall financial outcome.  
 **Discovery:** Published studies show comprehension challenges; public datasets illuminate spending variation and financial exposure.  
-**Resolution:** A decision aid identifies which information is personally relevant and explains trade-offs in plain language.  
+**Resolution:** A consequence graph shows what people your age would actually pay under each plan, in a typical year and in the worst case.  
 **Takeaway:** Understand a user's uncertainty, prioritize decision-relevant information, and experimentally test whether it helps.
 
 ### User stories
@@ -61,60 +61,77 @@ The audience should leave knowing that:
 | **Uncertainty** | What does the user likely misunderstand or overlook? | Published comprehension studies, product-language analysis, and survey indicators | Plain-language deductible, coinsurance, and out-of-pocket examples |
 | **Decision Impact** | Could the new information materially improve the decision? | Scenario-based plan calculations, existing behavioral experiments, and a proposed randomized evaluation | Total premium + estimated in-network cost sharing, with caveats |
 
-**Evidence boundary:** Public population datasets can describe financial circumstances and healthcare expenditure patterns. They cannot identify what an individual will find persuasive, establish which message has the highest conversion rate, or demonstrate causation. The proposed personalized display is a **design hypothesis** that would need testing.
+**Why "what would I pay?" is the information to lead with:** it meets all three tests. It is *relevant* (tied to a year like yours), it corrects a common *misunderstanding* (a low premium is not the same as a low annual cost), and published experiments suggest that showing people the financial consequences of each plan, rather than asking them to work it out from the terms, leads to fewer dominated choices. Whether it works for this audience is the hypothesis a future A/B test would check.
 
-## 2. Initial sketches: proposed data visualizations
+## 2. Initial Sketches
 
-These are **chart sketches**, not website wireframes. They show the expected axes, chart type, comparisons, and narrative annotations. All marks are schematic; **positions, slopes, and heights do not represent measured results**. Final values and chart forms will depend on data cleaning and source validation.
+The sketches follow the four acts in order: a storyboard of the whole story first, then one sketch per key visual. All values are placeholders; final numbers will come from the data sources in Section 3.
 
-### Sketch 1: Annual insurance cost by healthcare spending scenario
+### Story overview
 
-![Sketch of line chart with annual total cost on the vertical axis and healthcare spending scenarios on the horizontal axis](sketches/01_plan_cost_line_chart.svg)
+![Storyboard showing the four acts: the hook, the problem, the method, and the design](sketches/00_story_overview.svg)
 
-**Planned chart:** Two-line comparison. **X-axis:** assumed covered healthcare spending or scenarios. **Y-axis:** total annual cost to the consumer, including premiums and modeled in-network cost sharing. **Data:** CMS plan terms, explicit cost-sharing assumptions; MEPS provides separate contextual spending distributions. **Point of the chart:** the plan with the lowest premium may not have the lowest annual cost across scenarios. The actual line positions and any crossover must be calculated rather than assumed.
+This storyboard shows the story structure and the headline for each act; it is not a chart. Each act has one headline question and one main visual. The story moves from **the audience as a user** (Act 1), to **published evidence** (Act 2), to **my own analysis** (Act 3), and ends with **a design takeaway and call to action** (Act 4).
 
-### Sketch 2: Annual medical expenditures by age group
+### Sketch 1 (Act 1): The cheaper premium isn't always the cheaper year
 
-![Sketch of age-group box plots for annual medical spending](sketches/02_medical_spending_distribution.svg)
+![Line chart sketch comparing total annual cost of Plan A and Plan B across care scenarios, with a crossover point](sketches/01_plan_cost_line_chart.svg)
 
-**Planned chart:** Weighted box plots or percentile-range chart. **X-axis:** age groups (e.g., 22–30, 31–45, 46–64). **Y-axis:** annual medical expenditure. **Data:** MEPS, with appropriate survey weights. **Point of the chart:** spending varies within age groups, so a single “typical” number can hide substantial uncertainty. Whether a box plot communicates the data best will be revisited after examining zero expenditures and skew.
+**Chart:** Two lines, one per plan. **X-axis:** care scenarios from "no visits" to "very high use". **Y-axis:** total annual cost (12 months of premium plus cost sharing). **Data:** two real 2026 plans from the CMS files; scenarios grounded in MEPS spending. **Point:** the audience picks a plan first, then sees where the "cheap" plan becomes the expensive one. The flat segments show where the out-of-pocket maximum caps each plan.
 
-### Sketch 3: Financial barriers across consumer groups
+### Sketch 2 (Act 2): Most people can't read their own plan, and it costs them
 
-![Sketch of grouped bar chart comparing financial strain indicators across demographic groups](sketches/03_financial_barriers_chart.svg)
+![Big-number sketch: an icon array showing 14 of 100 people understand basic insurance terms, and a bar showing 61% chose a dominated plan](sketches/02_research_evidence.svg)
 
-**Planned chart:** Grouped bars for one or two relevant and verified financial-strain indicators. **X-axis:** clearly defined age or income groups. **Y-axis:** weighted share of respondents. **Data:** 2024 FINRA NFCS, subject to precise questionnaire coding and data availability. **Point of the chart:** the financial context of a decision varies across groups, suggesting that an information design should make different costs and risks salient. These descriptive associations cannot establish which message causes more purchases.
+**Visual:** two big numbers. An icon array shows that only 14 of 100 privately insured adults understood all four basic terms; a bar shows that 61% of employees at one firm chose a plan that was financially worse in every scenario. **Data:** published research (Loewenstein et al., 2013; Bhargava, Loewenstein & Sydnor, 2017), recreated and cited, with each study population stated. **Point:** the problem is not too many options; it's not understanding what the terms mean. This sets up Act 3.
 
-Together, the sketches follow the narrative: a **choice and cost trade-off**, evidence about **who faces which spending circumstances**, and a data-informed basis for **information prioritization**. Published behavioral studies will be integrated as annotated research evidence in the story rather than misrepresented as newly analyzed experimental data.
+### Sketch 3 (Act 3): Out of 100 people your age, how many have a costly year?
+
+![Icon array sketch of 100 people with an age-group selector and a spending threshold selector](sketches/03_spending_icon_array.svg)
+
+**Visual:** an icon array of 100 people with an age-group selector (22–30, 31–45, 46–64) and a threshold selector (e.g., $1,000, a typical deductible, the out-of-pocket maximum). **Data:** MEPS 2023, weighted. **Why an icon array instead of a box plot:** medical spending is very skewed (many people spend almost nothing, a few spend a lot), so a box plot would be squashed and hard to read. "X out of 100 people like you" is easier to feel, and is itself an example of showing the number that's about the viewer.
+
+### Sketch 4 (Act 3): Who is most exposed when care is expensive?
+
+![Grouped bar chart sketch of two financial-strain indicators across four age groups](sketches/04_financial_barriers_chart.svg)
+
+**Chart:** grouped bars for four age groups (18–24, 25–34, 35–44, 45–64). **Indicators:** skipped a doctor visit because of cost (NFCS item H30_3) and could not come up with $2,000 for an unexpected expense (J20). **Data:** 2024 FINRA NFCS, weighted. **Point:** the groups with the least cushion are the ones for whom the out-of-pocket number matters most, so they should see it first. The final headline will state the pattern the data actually shows.
+
+### Sketch 5 (Act 4): What would 100 people your age actually pay under each plan?
+
+![Dot plot sketch: 100 dots per plan showing total annual cost for people aged 22-30 under Plan A and Plan B, with a pile-up at each plan's out-of-pocket maximum](sketches/05_consequence_graph.svg)
+
+**Chart:** a "consequence graph" (two stacked dot plots). Each dot is one MEPS respondent aged 22–30; its position is the total they would have paid that year (12 months of premium plus cost sharing) under each plan. **Data:** my own calculation combining MEPS 2023 spending (weighted) with the terms of two real 2026 CMS plans. **Point:** this is the climax and the answer to "what should we show?" Instead of a table of terms, the viewer sees the typical year (the big cluster), the worst case (the pile-up at the out-of-pocket maximum), and how many people their age would be better off with each plan. Showing the whole distribution rather than one average follows Samek & Sydnor (2020), who found that showing only expected values was about half as effective as showing the full set of consequences. **Call to action:** before you enroll, find your plan's out-of-pocket maximum and price out one year like yours. **Next step:** an A/B test comparing a standard plan table with this graph, measuring comprehension, choice quality and trust.
 
 ## 3. Data Sources and Analysis Plan
 
 ### Primary data source 1: Medical Expenditure Panel Survey (MEPS)
 
-The **2023 MEPS Full Year Consolidated File (HC-251)**, published by the Agency for Healthcare Research and Quality, provides publicly downloadable individual-level demographic characteristics, annual healthcare expenditure measures, and sampling weights. I plan to calculate weighted annual expenditure distributions for younger adults and compare age groups. Relevant fields in the published file documentation include age (`AGE23X`), total expenditure (`TOTEXP23`), and person weight (`PERWT23F`). Before using an out-of-pocket measure, I will verify its precise name and definition in the codebook. These descriptive estimates can help ground relatable care-spending scenarios, but MEPS total expenditures cannot be used as a direct substitute for a plan's negotiated allowed charges or a patient's liability under a specific policy.
+The **2023 MEPS Full Year Consolidated File (HC-251)**, published by the Agency for Healthcare Research and Quality, provides publicly downloadable individual-level demographic characteristics, annual healthcare expenditure measures, and sampling weights. I will use it to calculate weighted annual spending distributions by age group (Sketch 3) and to define realistic care scenarios for the plan comparison (Sketches 1 and 5). Key fields: age (`AGE23X`), total expenditure (`TOTEXP23`), and person weight (`PERWT23F`); the out-of-pocket field will be confirmed in the codebook. The file is also available in Excel format, which can be loaded directly into Tableau.
 
 - [MEPS HC-251 public-use dataset](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-251&prfricon=yes)
 - [HC-251 documentation and file formats](https://meps.ahrq.gov/data_stats/download_data/pufs/h251/h251doc.shtml)
 
 ### Primary data source 2: CMS Marketplace Public Use Files
 
-The **2026 Centers for Medicare & Medicaid Services Marketplace Public Use Files** include downloadable files describing plan attributes, premiums, and benefits/cost-sharing features. I plan to obtain the relevant Plan Attributes, Rate, and Benefits and Cost Sharing files to identify two comparable individual-market plans in one location. The comparison will reference the correct plan year, location, premiums, deductibles, out-of-pocket limits, and any relevant cost-sharing conditions. Detailed annual cost examples will require explicit assumptions about services, network status, negotiated charges, copays, coinsurance, deductible applicability, and covered benefits. These plans represent **Marketplace options, not employer-sponsored insurance**; the distinction will be clear throughout the story.
+The **2026 Centers for Medicare & Medicaid Services Marketplace Public Use Files** include downloadable files describing plan attributes, premiums, and benefits/cost-sharing features. I will pick two real plans in the same area, one with a lower premium and higher deductible and one with the opposite, and use their premiums, deductibles, coinsurance and out-of-pocket maximums to calculate the total annual cost lines in Sketch 1 and, applied to each MEPS respondent's spending, the dot positions in Sketch 5. If I use Pennsylvania plans, they come from the separate State-Based Marketplace files.
 
 - [CMS Marketplace Public Use Files](https://www.cms.gov/marketplace/resources/data/public-use-files)
 - [CMS State-Based Marketplace Public Use Files](https://www.cms.gov/marketplace/resources/data/state-based-public-use-files)
 
 ### Primary data source 3: FINRA National Financial Capability Study
 
-The **FINRA Investor Education Foundation's 2024 National Financial Capability Study (NFCS)** offers a publicly accessible survey dataset, questionnaire, and supporting documentation. I plan to examine relevant demographic and financial-strain variables to compare consumer segments, subject to verifying the exact item wording, variable codes, survey weights, and missing data. If the questionnaire contains suitable cost-related care avoidance or emergency-savings questions, these may contextualize how financial vulnerability shapes the information consumers need. Survey associations will be interpreted descriptively; the dataset does not reveal individual preferences for competing insurance messages.
+The **FINRA Investor Education Foundation's 2024 National Financial Capability Study (NFCS)** offers a publicly accessible survey dataset, questionnaire, and supporting documentation. I will compare age groups (`A3a`) and income bands (`A8`) on two indicators: skipping a doctor or clinic visit because of cost in the past 12 months (`H30_3`) and confidence in coming up with $2,000 for an unexpected need within a month (`J20`). This is my own segmentation analysis for Sketch 4: it shows who has the least financial cushion, and therefore who most needs to see their out-of-pocket exposure.
 
 - [2024 NFCS public data, questionnaire, and methodology](https://www.finrafoundation.org/nfcs-data-and-downloads)
 
 ### Published behavioral research
 
-Two sources provide evidence for the information-design problem:
+Three published studies supply the evidence for Acts 2 and 4. I will recreate the key figures in a small CSV in this repository, with citations.
 
-- A **2013 Carnegie Mellon report on insurance understanding** summarizes a study where only **14%** of respondents understood all four concepts tested. This figure will be attributed to its original study population and will not be presented as a statistic about contemporary students. [CMU news article](https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html).
-- **Bhargava, Loewenstein, and Sydnor (2017), “Choose to Lose,”** examines plan selections by employees at a U.S. firm and documents financially dominated health-plan choices. These findings help establish that decision errors can be consequential, although they do not validate my proposed interface. [Journal article](https://doi.org/10.1093/qje/qjx011).
+- **Loewenstein et al. (2013):** among privately insured U.S. adults, only **14%** understood all four basic concepts (deductible, copay, coinsurance, out-of-pocket maximum). [CMU news release](https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html)
+- **Bhargava, Loewenstein & Sydnor (2017), "Choose to Lose":** **61%** of employees at a large U.S. firm chose a financially dominated plan, and the main driver was a lack of understanding of the plans, not the size of the menu. [Journal article](https://doi.org/10.1093/qje/qjx011)
+- **Samek & Sydnor (2020), "Impact of Consequence Information on Insurance Choice":** in two experiments, people choosing from standard feature-based information violated dominance at high rates; a "consequence graph" showing premiums plus out-of-pocket costs significantly improved choices, while showing only expected values was about half as effective. This is the evidence behind the consequence graph in Sketch 5. [NBER working paper](https://www.nber.org/papers/w28003)
 
 ### Proposed analytical workflow
 
@@ -123,11 +140,11 @@ Two sources provide evidence for the information-design problem:
 3. Download the applicable 2026 CMS Marketplace files. Identify geographically comparable plans using documented joins; inspect benefits and provider/network differences.
 4. Compute **illustrative**, clearly labeled annual total costs for the selected plans under explicit healthcare utilization assumptions. Keep MEPS expenditure statistics distinct from actual Marketplace cost-sharing calculations.
 5. Create Tableau visualizations: a plan-cost scenario chart, weighted expenditure distributions, and subgroup comparisons. Use informative annotations and sources, including assumptions and denominators.
-6. Translate the findings into a decision-aid mockup and design a future test comparing a traditional plan table with an accessible scenario-based presentation.
+6. Build the consequence graph by applying each plan's terms to every MEPS respondent aged 22–30, and design a future A/B test comparing a standard plan table with the graph.
 
 ### Access and reproducibility status
 
-At the Part I stage, official public download locations and candidate fields have been identified. **The raw datasets have not yet been downloaded into this repository or processed into the proposed results.** The above links give publicly accessible sources for the data. During the next phase, I will add appropriately sized cleaned extracts and a data dictionary or methodology note to the repository, subject to source terms. The sketches contain no empirical estimates. I will not invent results, message-effect sizes, or conversion improvements.
+All three datasets are publicly downloadable from the links above, and the variables needed have been identified. Cleaned extracts, the plan-cost calculation for Sketches 1 and 5, and a short data dictionary will be added to this repository in Part II.
 
 ## 4. Method and Medium
 
@@ -135,12 +152,12 @@ I plan to build a **Tableau Public data story** with linked worksheets and dashb
 
 ## Limitations and ethical considerations
 
-- These public datasets describe spending and financial context, not real-time insurance purchasing behavior or message-response experiments.
-- Personalized displays in this proposal are hypotheses, not validated recommendations or insurance advice.
-- Healthcare spending and insurance plan liability involve different measurements; provider networks, coverage rules, and negotiated prices may materially change actual costs.
-- Marketplace examples cannot represent the options offered by an employer.
-- A future A/B test should evaluate comprehension, decision quality, trust, and potential harm alongside engagement or enrollment.
-- Any published statistics will be recreated with proper citations; copyrighted figures or internal employer data will not be copied.
+- **No causal claims from my own data.** MEPS and NFCS describe spending and financial context. They cannot show which message a person finds persuasive or how a display changes enrollment; that evidence comes from the published experiments, and testing it with this audience is left to the proposed A/B test.
+- **Published figures keep their original populations.** The 14% and 61% figures describe the studies' samples (privately insured adults in 2013; employees at one firm), not today's students.
+- **Marketplace plans are not employer plans.** The CMS plans are used because their terms are public; employer plans have the same structure (premium, deductible, coinsurance, out-of-pocket maximum) but different prices.
+- **Spending is not the same as what you owe.** MEPS reports total spending; actual costs under a plan depend on negotiated prices, networks and coverage rules. Scenario costs will be labeled as estimates.
+- **Not insurance advice.** The consequence graph is a design concept. A future test should measure comprehension, choice quality, trust and potential harm, not just clicks or enrollment.
+- **No sketch values are results.** All marks in the sketches are placeholders.
 
 ## References
 
@@ -149,9 +166,10 @@ I plan to build a **Tableau Public data story** with linked worksheets and dashb
 3. Carnegie Mellon University. (2013). *Consumers Don't Understand Health Insurance, Carnegie Mellon Research Shows.* https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html
 4. Centers for Medicare & Medicaid Services. *Marketplace Public Use Files.* https://www.cms.gov/marketplace/resources/data/public-use-files
 5. FINRA Investor Education Foundation. *National Financial Capability Study: Data and Downloads.* https://www.finrafoundation.org/nfcs-data-and-downloads
+6. Samek, A., & Sydnor, J. R. (2020). "Impact of Consequence Information on Insurance Choice." NBER Working Paper No. 28003. https://doi.org/10.3386/w28003
 
 ## AI acknowledgements
 
-I used ChatGPT to help brainstorm and scope the research question, organize the four-act narrative, identify candidate public data sources, draft and edit this proposal, and generate initial chart sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. No original statistical analysis is presented as completed in this Part I proposal.
+I used ChatGPT and Claude to help brainstorm and scope the research question, organize the four-act narrative, identify and verify candidate public data sources, draft and edit this proposal, and draw the sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. No original statistical analysis is presented as completed in this Part I proposal.
 
 [Back to portfolio](README.md) | [Back to top](#final-project-part-i-what-should-we-show)
