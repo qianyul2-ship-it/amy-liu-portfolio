@@ -1,0 +1,5 @@
+figure,study,population,measure,value,unit,source_url
+Figure 2,"Loewenstein et al. (2013), Journal of Health Economics","U.S. adults aged 25-64 with private health insurance","Understood all four basic concepts (deductible, copay, coinsurance, out-of-pocket maximum)",14,percent,https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html
+Figure 2,"Loewenstein et al. (2013), Journal of Health Economics","U.S. adults aged 25-64 with private health insurance","Correctly calculated the cost of a hypothetical hospital stay",11,percent,https://www.cmu.edu/news/stories/archives/2013/august/aug1_understandinghealthinsurance.html
+Figure 2,"Bhargava, Loewenstein & Sydnor (2017), Quarterly Journal of Economics","23,894 employees at a large U.S. firm","Selected a nominally dominated health plan",61,percent,https://doi.org/10.1093/qje/qjx011
+Figure 2,"Bhargava, Loewenstein & Sydnor (2017), Quarterly Journal of Economics","23,894 employees at a large U.S. firm","Excess spending from dominated plans, as a share of chosen plan premiums",24,percent,https://doi.org/10.1093/qje/qjx011
