@@ -9,7 +9,11 @@ All files here are extracts of public datasets, keeping only the variables this 
 | `cms_pa_2026_plans.csv` | 2026 Pennsylvania individual-market medical plans (standard versions only) | 320 | Figures 1, 5 |
 | `cms_pa_2026_rates_age22_30.csv` | Monthly premiums for those plans, ages 22–30, by rating area | 7,281 | Figures 1, 5 |
 | `cms_pa_2026_service_areas.csv` | Which counties each issuer's service area covers (to find plans sold in Allegheny County) | 1,175 | Figures 1, 5 |
+| `fig3_overpay_by_premium_rule.csv` | Output for Figure 3: share of people aged 22–30 by how much more they'd pay with the lowest-premium plan | 6 | Figure 3 |
+| `fig4_worst_case_vs_cushion.csv` | Output for Figure 4: share who can't raise $2,000 by age; median out-of-pocket maximum by metal level | 11 | Figure 4 |
 | `nfcs_2024_extract.csv` | 2024 National Financial Capability Study respondents | 25,539 | Figure 4 |
+
+The output files are produced by [`analysis/fig3_fig4.py`](../analysis/fig3_fig4.py); run it from the repository root.
 
 ## Sources
 

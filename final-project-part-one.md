@@ -38,7 +38,7 @@ The audience should leave knowing that:
 | --- | --- | --- |
 | **1. The choice** | Which plan would you choose? | **Figure 1:** total yearly cost of two plans, from a healthy year to a major illness. The audience picks a plan first, then sees where the "cheap" plan becomes the expensive one. |
 | **2. The problem** | Why do people get this wrong? | **Figure 2:** two findings from published research: only 14% of insured adults understood four basic terms, and 61% of employees at one firm chose a plan that was worse for them in every case. |
-| **3. Who needs what** | What should each person see first? | **Figure 3:** out of 100 people your age, how many have a costly medical year (MEPS). **Figure 4:** which age groups have the least cushion for a surprise bill (NFCS). Together they introduce the three tests: **Relevance, Uncertainty, Decision Impact**. |
+| **3. Who needs what** | Which number leads each person to the right choice? | **Figure 3:** if everyone in their 20s picked the cheapest premium, 65 of 100 would do fine, but 27 of 100 would pay at least $1,000 more than their best plan. Premium alone is the wrong number for them. **Figure 4:** half of adults under 35 couldn't raise $2,000, while a typical plan's worst case is $10,600. For people without a cushion, the worst case is the number to show first. Together they introduce the three tests: **Relevance, Uncertainty, Decision Impact**. |
 | **4. The answer** | What would I actually pay? | **Figure 5:** what people aged 22–30 would pay under each plan in a typical year and in a bad year, and for how many of 100 people each plan is cheaper. Ends with the call to action and a proposed A/B test. |
 
 ### Story arc
@@ -67,13 +67,13 @@ The audience should leave knowing that:
 
 ## 2. Initial Sketches
 
-A storyboard of the whole story, followed by one sketch per figure. Numbers in Figures 1, 3, 4 and 5 are example values to show the layout; the real values will come from the data in Section 3. Figure 2 uses published figures.
+A storyboard of the whole story, followed by one sketch per figure. Figures 3 and 4 use real, preliminary numbers calculated from the data in Section 3. Numbers in Figures 1 and 5 are example values to show the layout. Figure 2 uses published figures.
 
 ### Storyboard
 
 ![Storyboard of the five figures in story order](sketches/storyboard.svg)
 
-The story moves from a choice the audience makes themselves (Figure 1), to published evidence (Figure 2), to my own analysis of who needs which information (Figures 3–4), and ends with the answer and the call to action (Figure 5).
+The story moves from a choice the audience makes themselves (Figure 1), to published evidence (Figure 2), to my own analysis of which number leads each person to the right choice (Figures 3–4), and ends with the answer and the call to action (Figure 5).
 
 ### Figure 1: A cheaper monthly premium doesn't always mean a cheaper year
 
@@ -87,17 +87,17 @@ Each line is one plan. Moving right, the person uses more medical care that year
 
 Left: of 100 privately insured adults, only 14 understood deductible, copay, coinsurance and out-of-pocket maximum. Right: 61% of employees at a large U.S. firm chose a plan that was worse for them whatever happened, costing an extra 24% of their premiums; the main reason was not understanding the plans. **Data:** Loewenstein et al. (2013); Bhargava, Loewenstein & Sydnor (2017).
 
-### Figure 3: How many people in their 20s have a costly medical year?
+### Figure 3: The cheapest premium works for most people in their 20s, but not all
 
-![Icon array of 100 people with an age-group selector; highlighted people spent more than $1,000](sketches/fig3_spending.svg)
+![Bar chart: if everyone aged 22-30 picked the lowest-premium plan, 65 of 100 would pay about the same as their cheapest plan, and 27 of 100 would pay at least $1,000 more](sketches/fig3_spending.svg)
 
-Each figure is one person out of 100 in the selected age group; highlighted people spent more than $1,000 on medical care that year. Viewers can switch age groups. An icon array is used instead of a box plot because medical spending is very uneven (most people spend little, a few spend a lot), and "X out of 100 people like you" is easier to grasp. **Data:** MEPS 2023, weighted.
+**What it tests:** what happens if people choose using the one number most of them look at, the monthly premium. For each person aged 22–30 in MEPS, I calculated their yearly total (premiums + medical bills) under all 72 plans sold in Allegheny County in 2026, found the plan that would have been cheapest for them, and compared it with the lowest-premium plan. **Result (preliminary):** 65 of 100 paid about the same either way, but 27 of 100 paid at least $1,000 more, and 7 in 10 of those people saw a doctor five or more times that year. **Why it matters:** the premium is the right number for healthy people and the wrong one for frequent users, so a product should not show everyone the same thing. **Data:** MEPS 2023 × CMS 2026 Pennsylvania plans; calculation in [`analysis/fig3_fig4.py`](analysis/fig3_fig4.py).
 
-### Figure 4: Who has the least cushion for a surprise medical bill?
+### Figure 4: Half of young adults couldn't cover a fifth of a typical plan's worst case
 
-![Grouped bar chart: share of each age group that skipped care because of cost or couldn't cover a $2,000 emergency](sketches/fig4_cushion.svg)
+![Bar chart of out-of-pocket maximums for Bronze, Silver, Gold and Platinum plans, with the first $2,000 highlighted](sketches/fig4_cushion.svg)
 
-For each age group, blue is the share who skipped a doctor visit because of cost (NFCS item `H30_3`) and orange is the share who couldn't come up with $2,000 for an emergency (`J20`). Groups with the least cushion are the ones who most need to see their worst-case cost first. **Data:** FINRA NFCS 2024, weighted.
+**What it shows:** the most a person could owe in a bad year (median out-of-pocket maximum of 2026 plans sold in Allegheny County: $10,600 for Bronze and Silver, $7,500 for Gold, $5,000 for Platinum), next to a reference point the audience can feel: $2,000, which 49% of adults aged 18–24 and 47% of those aged 25–34 said they couldn't come up with within a month. **Why it matters:** for people without a cushion, the worst case is the number they most need to see first, and a plan table buries it in a row of terms. **Data:** CMS 2026 Pennsylvania plan files; FINRA NFCS 2024, weighted.
 
 ### Figure 5: What would people in their 20s actually pay under each plan?
 
@@ -109,7 +109,7 @@ This is the answer to "what should we show?" Instead of a table of plan terms, i
 
 ### Primary data source 1: Medical Expenditure Panel Survey (MEPS)
 
-The **2023 MEPS Full Year Consolidated File (HC-251)**, published by the Agency for Healthcare Research and Quality, provides publicly downloadable individual-level demographic characteristics, annual healthcare expenditure measures, and sampling weights. I will use it to calculate weighted annual spending distributions by age group (Figure 3) and to define realistic care scenarios for the plan comparison (Figures 1 and 5). Key fields: age (`AGE23X`), total spending (`TOTEXP23`), out-of-pocket spending (`TOTSLF23`), emergency-room visits (`ERTOT23`), hospital stays (`IPDIS23`), and person weight (`PERWT23F`). The extract covers 18,919 people, including 1,566 aged 22–30.
+The **2023 MEPS Full Year Consolidated File (HC-251)**, published by the Agency for Healthcare Research and Quality, provides publicly downloadable individual-level demographic characteristics, annual healthcare expenditure measures, and sampling weights. I use each respondent's spending to calculate what they would have paid under each real plan (Figure 3) and to define realistic care scenarios for Figures 1 and 5. Key fields: age (`AGE23X`), total spending (`TOTEXP23`), out-of-pocket spending (`TOTSLF23`), emergency-room visits (`ERTOT23`), hospital stays (`IPDIS23`), and person weight (`PERWT23F`). The extract covers 18,919 people, including 1,566 aged 22–30.
 
 - [MEPS HC-251 public-use dataset](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-251&prfricon=yes)
 - [HC-251 documentation and file formats](https://meps.ahrq.gov/data_stats/download_data/pufs/h251/h251doc.shtml)
@@ -123,7 +123,7 @@ The **2026 Centers for Medicare & Medicaid Services State-Based Marketplace Publ
 
 ### Primary data source 3: FINRA National Financial Capability Study
 
-The **FINRA Investor Education Foundation's 2024 National Financial Capability Study (NFCS)** offers a publicly accessible survey dataset, questionnaire, and supporting documentation. I will compare age groups (`A3Ar_w`) and income bands (`A8_2021`), using the national weight (`wgt_n2`), on two indicators: skipping a doctor or clinic visit because of cost in the past 12 months (`H30_3`) and confidence in coming up with $2,000 for an unexpected need within a month (`J20`). This is my own segmentation analysis for Figure 4: it shows who has the least financial cushion, and therefore who most needs to see their out-of-pocket exposure.
+The **FINRA Investor Education Foundation's 2024 National Financial Capability Study (NFCS)** offers a publicly accessible survey dataset, questionnaire, and supporting documentation. I will compare age groups (`A3Ar_w`) and income bands (`A8_2021`), using the national weight (`wgt_n2`), on two indicators: skipping a doctor or clinic visit because of cost in the past 12 months (`H30_3`) and confidence in coming up with $2,000 for an unexpected need within a month (`J20`). This is my own analysis for Figure 4: the share of young adults who couldn't raise $2,000 becomes the reference point against each plan's worst case, showing who most needs to see their out-of-pocket maximum.
 
 - [2024 NFCS public data, questionnaire, and methodology](https://www.finrafoundation.org/nfcs-data-and-downloads)
 
@@ -138,7 +138,7 @@ Three published studies supply the evidence for Figures 2 and 5. The key figures
 ### Proposed analytical workflow
 
 1. ✅ Download MEPS HC-251, the 2024 NFCS and the 2026 Pennsylvania plan files; extract the needed variables and document them (done, see the data folder).
-2. Estimate weighted spending distributions by age (MEPS) and weighted shares by age and income (NFCS), excluding "don't know" and "prefer not to say" answers.
+2. ✅ Preliminary calculations for Figures 3 and 4 (done, see `analysis/fig3_fig4.py`). Refine the cost model with copays and drug deductibles.
 3. Choose two comparable plans in the same rating area: one lower-premium/higher-deductible, one the opposite.
 4. Compute **illustrative**, clearly labeled annual total costs for the selected plans under explicit healthcare utilization assumptions. Keep MEPS expenditure statistics distinct from actual Marketplace cost-sharing calculations.
 5. Create Tableau visualizations: a plan-cost scenario chart, weighted expenditure distributions, and subgroup comparisons. Use informative annotations and sources, including assumptions and denominators.
@@ -159,7 +159,8 @@ I plan to build a **Tableau Public data story** with linked worksheets and dashb
 - **Marketplace plans are not employer plans.** The CMS plans are used because their terms are public; employer plans have the same structure (premium, deductible, coinsurance, out-of-pocket maximum) but different prices.
 - **Spending is not the same as what you owe.** MEPS reports total spending; actual costs under a plan depend on negotiated prices, networks and coverage rules. Scenario costs will be labeled as estimates.
 - **Not insurance advice.** Figure 5 is a design concept. A future test should measure comprehension, choice quality, trust and potential harm, not just clicks or enrollment.
-- **Example values are not results.** Numbers in Figures 1, 3, 4 and 5 are placeholders until the data is processed.
+- **Example values are not results.** Numbers in Figures 1 and 5 are placeholders until the data is processed.
+- **Figure 3 uses a simplified cost model.** It treats each person's total medical spending as the bill their plan would see and applies only the deductible, coinsurance and out-of-pocket maximum; copays, separate drug deductibles and network differences are ignored, and premiums are for a 26-year-old in Allegheny County. The numbers will be refined in Part II.
 
 ## References
 
@@ -172,6 +173,6 @@ I plan to build a **Tableau Public data story** with linked worksheets and dashb
 
 ## AI acknowledgements
 
-I used ChatGPT and Claude to help brainstorm and scope the research question, organize the narrative, identify and verify candidate public data sources, draft and edit this proposal, and draw the sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. No original statistical analysis is presented as completed in this Part I proposal.
+I used ChatGPT and Claude to help brainstorm and scope the research question, organize the narrative, identify and verify candidate public data sources, draft and edit this proposal, and draw the sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. Figures 3 and 4 contain my own preliminary calculations from the public data; the code is in `analysis/fig3_fig4.py`, and I reviewed the results and checked each claim on the charts against the data.
 
 [Back to portfolio](README) | [Back to top](#final-project-part-i-what-should-we-show)
