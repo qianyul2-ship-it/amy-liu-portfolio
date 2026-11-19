@@ -15,7 +15,7 @@
 
 Health insurance is one of the first complicated financial decisions many young adults encounter after graduation. A plan may advertise an attractive monthly premium, yet the amount a person pays can also depend on deductibles, copayments, coinsurance, provider networks, and out-of-pocket limits. For students accustomed to university health coverage, comparing plans through an employer or the individual insurance marketplace can be unfamiliar. I want to tell a data-driven story about why a seemingly simple health insurance decision is difficult and how clearer information might help. Research involving Carnegie Mellon scholars has documented confusion about insurance terminology and financially disadvantageous plan choices. This makes health insurance a practical case study in information design.
 
-My central question is **how a product team can determine which information to show a particular consumer**. Rather than assuming every consumer needs a longer explanation of policy terms, I will explore how a decision-maker's context and information gaps can guide the presentation. I plan to combine published behavioral research with public data on medical expenditures, insurance plan attributes, and financial circumstances. The narrative moves from an audience-facing plan-choice exercise to evidence of misunderstanding, then proposes a three-part information selection framework: **Relevance, Uncertainty, and Decision Impact**. Finally, I will sketch a personalized comparison interface and explain how its effectiveness could be tested. The project aims to make insurance choices more understandable for classmates while demonstrating a transferable method for evidence-based product design.
+My central question is **how a product team can determine which information to show a particular consumer**. Rather than assuming every consumer needs a longer explanation of policy terms, I will explore how a decision-maker's context and information gaps can guide the presentation. I plan to combine published behavioral research with public data on medical expenditures, insurance plan attributes, and financial circumstances. The narrative moves from an audience-facing plan-choice exercise to evidence of misunderstanding, then proposes a three-part information selection framework: **Relevance, Uncertainty, and Decision Impact**. Finally, I will connect the evidence to a proposed information-prioritization method and explain how its effectiveness could be tested. The project aims to make insurance choices more understandable for classmates while demonstrating a transferable method for evidence-based product design.
 
 ### Audience and communication goals
 
@@ -63,27 +63,29 @@ The audience should leave knowing that:
 
 **Evidence boundary:** Public population datasets can describe financial circumstances and healthcare expenditure patterns. They cannot identify what an individual will find persuasive, establish which message has the highest conversion rate, or demonstrate causation. The proposed personalized display is a **design hypothesis** that would need testing.
 
-## 2. Initial sketches
+## 2. Initial sketches: proposed data visualizations
 
-The following low-fidelity sketches illustrate the planned story, including headings, charts, explanatory narrative, and interactions. They are **wireframes**, so the illustrated content should not be interpreted as statistical results.
+These are **chart sketches**, not website wireframes. They show the expected axes, chart type, comparisons, and narrative annotations. All marks are schematic; **positions, slopes, and heights do not represent measured results**. Final values and chart forms will depend on data cleaning and source validation.
 
-### Sketch 1. Act 1: The opening choice
+### Sketch 1: Annual insurance cost by healthcare spending scenario
 
-![Wireframe showing two plan options, an audience poll, and annual cost chart](sketches/01_hook_plan_choice.svg)
+![Sketch of line chart with annual total cost on the vertical axis and healthcare spending scenarios on the horizontal axis](sketches/01_plan_cost_line_chart.svg)
 
-Viewers choose between **Plan A** and **Plan B** based on visible summary details. A follow-up visualization shows how the relative annual cost changes across care scenarios. In the final piece, example plans will come from the **same market, location, year, and comparable coverage category**. Differences in benefit coverage and provider networks will be disclosed.
+**Planned chart:** Two-line comparison. **X-axis:** assumed covered healthcare spending or scenarios. **Y-axis:** total annual cost to the consumer, including premiums and modeled in-network cost sharing. **Data:** CMS plan terms, explicit cost-sharing assumptions; MEPS provides separate contextual spending distributions. **Point of the chart:** the plan with the lowest premium may not have the lowest annual cost across scenarios. The actual line positions and any crossover must be calculated rather than assumed.
 
-### Sketch 2. Act 2: Evidence and segments
+### Sketch 2: Annual medical expenditures by age group
 
-![Wireframe showing research evidence, medical expenditure distribution, and financial vulnerability comparisons](sketches/02_evidence_and_segments.svg)
+![Sketch of age-group box plots for annual medical spending](sketches/02_medical_spending_distribution.svg)
 
-Published research supplies the problem; original analysis of public data provides the population context. Charts will report data source, sample population, time period, survey weights where appropriate, and limitations. A published estimate about employees in a particular firm will not be presented as a result about CMU students.
+**Planned chart:** Weighted box plots or percentile-range chart. **X-axis:** age groups (e.g., 22–30, 31–45, 46–64). **Y-axis:** annual medical expenditure. **Data:** MEPS, with appropriate survey weights. **Point of the chart:** spending varies within age groups, so a single “typical” number can hide substantial uncertainty. Whether a box plot communicates the data best will be revisited after examining zero expenditures and skew.
 
-### Sketch 3. Acts 3 and 4: Method and solution
+### Sketch 3: Financial barriers across consumer groups
 
-![Wireframe illustrating the three-part information-selection framework and a customizable comparison interface](sketches/03_method_and_solution.svg)
+![Sketch of grouped bar chart comparing financial strain indicators across demographic groups](sketches/03_financial_barriers_chart.svg)
 
-The framework leads to a proposed interactive product: users select a hypothetical context, see scenario-specific annual-cost ranges and trade-offs, and can inspect the assumptions underlying each visualization. The design distinguishes empirical observations, hypothetical computations, and recommendations.
+**Planned chart:** Grouped bars for one or two relevant and verified financial-strain indicators. **X-axis:** clearly defined age or income groups. **Y-axis:** weighted share of respondents. **Data:** 2024 FINRA NFCS, subject to precise questionnaire coding and data availability. **Point of the chart:** the financial context of a decision varies across groups, suggesting that an information design should make different costs and risks salient. These descriptive associations cannot establish which message causes more purchases.
+
+Together, the sketches follow the narrative: a **choice and cost trade-off**, evidence about **who faces which spending circumstances**, and a data-informed basis for **information prioritization**. Published behavioral studies will be integrated as annotated research evidence in the story rather than misrepresented as newly analyzed experimental data.
 
 ## 3. Data Sources and Analysis Plan
 
@@ -129,7 +131,7 @@ At the Part I stage, official public download locations and candidate fields hav
 
 ## 4. Method and Medium
 
-I plan to create a stand-alone **scrollytelling website in Shorthand**, supported by interactive visualizations made in **Tableau Public**. The narrative will begin with a short plan-choice exercise and then advance through research evidence, original descriptive analysis, and the Relevance–Uncertainty–Decision Impact framework. The closing concept may be built with embedded interaction or Tableau parameters, depending on platform support. All visuals will include readable labels, annotations, data sources, and limitations. GitHub will serve as the development portfolio and provide a public link to the finished story. PowerPoint and Excel will not serve as the final presentation medium.
+I plan to build a **Tableau Public data story** with linked worksheets and dashboards, using interactive filters or parameters where practical. My **GitHub portfolio page** will provide the narrative sequence, context, sources, and links to the Tableau visualizations, creating a publicly accessible final project. I will focus on a small set of annotated charts with a clear progression from the initial insurance-plan choice to evidence on information needs and then a proposed design principle. The work will use tools introduced in class and will avoid PowerPoint or Excel as the final medium. If a separate interactive story platform becomes necessary, I will check with the instructor before adopting it.
 
 ## Limitations and ethical considerations
 
@@ -150,6 +152,6 @@ I plan to create a stand-alone **scrollytelling website in Shorthand**, supporte
 
 ## AI acknowledgements
 
-I used ChatGPT to help brainstorm and scope the research question, organize the four-act narrative, identify candidate public data sources, draft and edit this proposal, and generate initial wireframe sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. No original statistical analysis is presented as completed in this Part I proposal.
+I used ChatGPT to help brainstorm and scope the research question, organize the four-act narrative, identify candidate public data sources, draft and edit this proposal, and generate initial chart sketches. The data sources, research claims, analytical assumptions, and final work will be reviewed and validated before publication. No original statistical analysis is presented as completed in this Part I proposal.
 
 [Back to portfolio](README.md) | [Back to top](#final-project-part-i-what-should-we-show)
