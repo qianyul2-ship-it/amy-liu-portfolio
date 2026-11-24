@@ -37,26 +37,27 @@ frames = [
      "Ends with sources and method notes."),
 ]
 
-COLS, FW, FH, GAP, M = 4, 560, 600, 36, 70
+COLS, FW, FH, GAP, M = 2, 1100, 1000, 50, 80
+ROWS = (len(frames) + COLS - 1) // COLS
 W = M * 2 + COLS * FW + (COLS - 1) * GAP
-H = 230 + 2 * FH + GAP + 80
+H = 260 + ROWS * FH + (ROWS - 1) * GAP + 100
 img = Image.new("RGB", (W, H), "white")
 d = ImageDraw.Draw(img)
-d.text((M, 60), "Storyboard: What Should We Show?", font=font(46, True), fill=INK)
-d.text((M, 130), "Audience: product and design people who build pages where users compare complex products. "
-       "Eight screens, read top-left to bottom-right.", font=font(24), fill=SUB)
+d.text((M, 60), "Storyboard: What Should We Show?", font=font(64, True), fill=INK)
+d.text((M, 150), "Audience: product and design people who build pages where users compare complex products.", font=font(34), fill=SUB)
+d.text((M, 196), "Eight screens, read left to right, top to bottom.", font=font(34), fill=SUB)
 
 for i, (tag, head, fig, body, punch) in enumerate(frames):
     col, row = i % COLS, i // COLS
     x = M + col * (FW + GAP)
-    y = 200 + row * (FH + GAP)
+    y = 270 + row * (FH + GAP)
     d.rounded_rectangle([x, y, x + FW, y + FH], 16, outline=LINE, width=3, fill="white")
-    d.text((x + 24, y + 22), tag, font=font(20, True), fill=ORANGE if i == 7 else BLUE)
-    yy = y + 56
-    for ln in textwrap.wrap(head, 30):
-        d.text((x + 24, yy), ln, font=font(28, True), fill=INK)
-        yy += 36
-    box = [x + 24, y + 140, x + FW - 24, y + 420]
+    d.text((x + 36, y + 30), tag, font=font(32, True), fill=ORANGE if i == 7 else BLUE)
+    yy = y + 80
+    for ln in textwrap.wrap(head, 45):
+        d.text((x + 36, yy), ln, font=font(46, True), fill=INK)
+        yy += 56
+    box = [x + 36, y + 160, x + FW - 36, y + 790]
     d.rounded_rectangle(box, 10, fill=(249, 250, 251))
     if fig:
         im = Image.open(f"figures/png/{fig}.png").convert("RGB")
@@ -64,20 +65,19 @@ for i, (tag, head, fig, body, punch) in enumerate(frames):
         im.thumbnail((bw, bh), Image.LANCZOS)
         img.paste(im, (box[0] + 8 + (bw - im.width) // 2, box[1] + 8 + (bh - im.height) // 2))
     else:
-        d.text((box[0] + 30, box[1] + 70), "What Should", font=font(40, True), fill=INK)
-        d.text((box[0] + 30, box[1] + 118), "We Show?", font=font(40, True), fill=INK)
-        d.text((box[0] + 30, box[1] + 180), "Helping people choose a health plan,", font=font(20), fill=SUB)
-        d.text((box[0] + 30, box[1] + 206), "one number at a time", font=font(20), fill=SUB)
-    yy = y + 440
-    for ln in textwrap.wrap(body, 44):
-        d.text((x + 24, yy), ln, font=font(20), fill=INK)
-        yy += 27
-    d.text((x + 24, y + FH - 44), punch, font=font(20, True), fill=ORANGE if i == 7 else BLUE)
+        d.text((box[0] + 70, box[1] + 170), "What Should", font=font(80, True), fill=INK)
+        d.text((box[0] + 70, box[1] + 265), "We Show?", font=font(80, True), fill=INK)
+        d.text((box[0] + 70, box[1] + 390), "Helping people choose a health plan,", font=font(38), fill=SUB)
+        d.text((box[0] + 70, box[1] + 440), "one number at a time", font=font(38), fill=SUB)
+    yy = y + 815
+    for ln in textwrap.wrap(body, 62):
+        d.text((x + 36, yy), ln, font=font(32), fill=INK)
+        yy += 42
+    d.text((x + 36, y + FH - 62), punch, font=font(34, True), fill=ORANGE if i == 7 else BLUE)
     if col < COLS - 1:
-        ax, ay = x + FW + 8, y + FH // 2
-        d.polygon([(ax, ay - 12), (ax + 20, ay), (ax, ay + 12)], fill=(156, 163, 175))
+        ax, ay = x + FW + 10, y + FH // 2
+        d.polygon([(ax, ay - 16), (ax + 28, ay), (ax, ay + 16)], fill=(156, 163, 175))
 
-d.text((M, H - 60), "Figures are draft high-fidelity charts built from MEPS 2023, CMS 2026 Pennsylvania plan files, FINRA NFCS 2024 "
-       "and published research. Simplified cost model; see analysis/.", font=font(20), fill=(156, 163, 175))
+d.text((M, H - 80), "Draft charts built from MEPS 2023, CMS 2026 Pennsylvania plan files, FINRA NFCS 2024 and published research.", font=font(30), fill=(156, 163, 175))
 img.save("figures/storyboard.png", optimize=True)
 print(img.size)
