@@ -116,10 +116,10 @@ def fig1():
 
 # ---------------------------------------------------------------- Figure 2: cost curves
 def fig2():
-    W, H = 1100, 660
+    W, H = 1180, 660
     be = S("break_even_medical_bills")
-    b = header(f"Below {money(be)} in medical bills, Plan A is cheaper. Above it, Plan B is.",
-               "Total cost for the year (premiums + your share of medical bills)")
+    b = header(f"{100 - S('share_spend_above_break_even_pct'):.0f} of 100 people should pick Plan A. The table can't tell you which group you're in.",
+               f"Total cost for the year (premiums + your share of medical bills). The plans cost the same at {money(be)} in medical bills.")
     x0, x1, yt, yb = 130, 880, 140, 500
     xmax, ymax = 20000, 14000
     X = lambda v: x0 + (x1 - x0) * v / xmax
@@ -195,149 +195,156 @@ def fig3():
     save("fig3_research.svg", W, H, b)
 
 
-# ---------------------------------------------------------------- Figure 4: cheapest premium
+# ---------------------------------------------------------------- Figure 4: who needs what (merged)
 def fig4():
-    W, H = 1100, 590
-    b = header("Showing only the premium works for most people in their 20s, but not all",
-               "If everyone aged 22-30 picked the lowest-premium plan: extra cost vs. the plan that would have been cheapest for them")
+    W, H = 1200, 640
+    b = header("Different people need a different number first",
+               "Two groups the plan table fails, people aged 22-35")
+    # left panel: frequent users and the premium
     raw = f3.share_pct.tolist()
-    floors = [int(v) for v in raw]
-    for i in sorted(range(len(raw)), key=lambda i: raw[i] - floors[i], reverse=True)[:100 - sum(floors)]:
-        floors[i] += 1
-    labs = ["Under $100", "$100-500", "$500-1,000", "$1,000-2,000", "$2,000-5,000", "$5,000 or more"]
-    x0, y0, rowh, unit = 230, 150, 52, 6.0
-    b.append(t(x0 - 15, y0 - 12, "Extra cost for the year", 14, SUB, "bold", "end"))
-    b.append(t(x0, y0 - 12, "People out of 100", 14, SUB, "bold"))
-    for i, (lab, v) in enumerate(zip(labs, floors)):
-        y = y0 + i * rowh
-        col = HI if i >= 3 else PALE
-        b.append(t(x0 - 15, y + 27, lab, 15, INK, "normal", "end"))
-        b.append(r(x0, y + 8, v * unit, 30, col, 3))
-        b.append(t(x0 + v * unit + 10, y + 29, v, 16, HI if i >= 3 else SUB, "bold"))
-    big = sum(floors[3:])
-    bxr = x0 + max(floors[3:]) * unit + 50
-    b.append(f'<path d="M{bxr} {y0+3*rowh+8} L{bxr+12} {y0+3*rowh+8} L{bxr+12} {y0+6*rowh-6} L{bxr} {y0+6*rowh-6}" fill="none" stroke="{HI}" stroke-width="2"/>')
-    b.append(t(760, 190, f"{floors[0]} of 100", 40, SUB, "bold"))
-    b.append(t(760, 218, "paid about the same as", 16, INK))
-    b.append(t(760, 240, "their cheapest plan", 16, INK))
-    b.append(t(760, 345, f"{big} of 100", 40, HI, "bold"))
-    b.append(t(760, 373, "paid at least $1,000 more.", 16, INK))
-    b.append(t(760, 395, "7 in 10 of them saw a doctor", 16, INK))
-    b.append(t(760, 417, "5 or more times that year", 16, INK))
-    b.append(t(60, 520, "Lowest-premium plan: a Bronze plan with a $6,700 deductible and a $10,600 out-of-pocket maximum.", 14, SUB))
-    b.append(source(H, "MEPS 2023 (ages 22-30, weighted) x 72 plans sold in Allegheny County, 2026 (CMS). Simplified cost model."))
-    save("fig4_cheapest_premium.svg", W, H, b)
-
-
-# ---------------------------------------------------------------- Figure 5: worst case vs cushion
-def fig5():
-    W, H = 1100, 620
-    b = header("Half of young adults couldn't cover a fifth of a typical plan's worst case",
-               "The most you could owe in a bad year (out-of-pocket maximum), 2026 plans sold in Allegheny County")
+    fl = [int(v) for v in raw]
+    for i in sorted(range(len(raw)), key=lambda i: raw[i] - fl[i], reverse=True)[:100 - sum(fl)]:
+        fl[i] += 1
+    big = sum(fl[3:])
+    b.append(t(60, 140, "IF YOU SEE A DOCTOR OFTEN", 14, A, "bold"))
+    b.append(t(60, 172, "The lowest premium can cost you more", 20, INK, "bold"))
+    labs = ["Under $100", "$100-1,000", "$1,000 or more"]
+    vals = [fl[0], fl[1] + fl[2], big]
+    x0 = 200
+    for k, (lab, v) in enumerate(zip(labs, vals)):
+        y = 205 + k * 56
+        b.append(t(x0 - 12, y + 25, lab, 15, INK, "normal", "end"))
+        b.append(r(x0, y + 6, v * 4.4, 30, HI if k == 2 else PALE, 3))
+        b.append(t(x0 + v * 4.4 + 10, y + 27, f"{v} of 100", 15, HI if k == 2 else SUB, "bold"))
+    b.append(t(60, 395, "Extra cost for the year if everyone aged 22-30 picked", 14, SUB))
+    b.append(t(60, 414, "the lowest-premium plan (vs. their own cheapest plan).", 14, SUB))
+    b.append(t(60, 460, f"{big} of 100 would pay $1,000+ more;", 17, INK, "bold"))
+    b.append(t(60, 484, "7 in 10 of them saw a doctor 5+ times that year.", 17, INK))
+    b.append(t(60, 520, "Show them: their yearly total, not just the premium.", 16, A, "bold"))
+    b.append(ln(600, 130, 600, 560, GRID, 1))
+    # right panel: no cushion and the worst case
     med = {row.item.split(", ")[1].split(" plans")[0]: row.value for row in f4.itertuples() if "Median" in row.item}
     cant = {row.item.split("ages ")[1]: row.value for row in f4.itertuples() if "Can't" in row.item}
-    bars = [(k, med[k]) for k in ["Bronze", "Silver", "Gold", "Platinum"]]
-    x0, x1 = 200, 1000
-    sc = lambda v: x0 + (x1 - x0) * v / 11000
-    xr = sc(2000)
-    b.append(r(x0, 170, xr - x0, 270, WARM))
-    for i, (lab, v) in enumerate(bars):
-        y = 200 + i * 62
-        b.append(t(x0 - 15, y + 26, lab, 16, INK, "normal", "end"))
-        b.append(r(x0, y + 6, sc(v) - x0, 32, A, 3))
-        b.append(r(x0, y + 6, xr - x0, 32, HI, 3))
-        b.append(t(sc(v) - 10, y + 28, money(v), 15, "white", "bold", "end"))
-    b.append(ln(xr, 165, xr, 450, HI, 2))
-    b.append(t(xr, 156, "$2,000", 16, HI, "bold", "middle"))
-    for v in [0, 2000, 4000, 6000, 8000, 10000]:
-        b.append(t(sc(v), 470, f"${v//1000}k" if v else "$0", 13, SUB, "normal", "middle"))
-    b.append(t(60, 520, "About 1 in 2 adults under 35 said they couldn't come up with $2,000 within a month", 16, INK, "bold"))
-    b.append(t(60, 544, f"({cant['18-24']:.0f}% of those aged 18-24, {cant['25-34']:.0f}% of those aged 25-34). Orange = that $2,000; blue = the rest of the worst case.", 15, SUB))
-    b.append(source(H, "CMS 2026 Pennsylvania plan files (median by metal level); FINRA Foundation NFCS 2024, weighted."))
-    save("fig5_worst_case.svg", W, H, b)
+    b.append(t(640, 140, "IF YOU HAVE LITTLE SAVED", 14, HI, "bold"))
+    b.append(t(640, 172, "The worst case is far beyond reach", 20, INK, "bold"))
+    xs0, xs1 = 640, 1130
+    sc = lambda v: xs0 + (xs1 - xs0) * v / 11000
+    rows = [("Emergency money half of under-35s couldn't raise", 2000, HI), ("Bronze worst case", med["Bronze"], A), ("Gold worst case", med["Gold"], A)]
+    for k, (lab, v, col) in enumerate(rows):
+        y = 205 + k * 56
+        b.append(t(xs0, y + 2, lab, 13, SUB))
+        b.append(r(xs0, y + 8, sc(v) - xs0, 28, col, 3))
+        b.append(t(sc(v) + 8, y + 28, money(v), 15, col, "bold"))
+    b.append(t(640, 395, "Median out-of-pocket maximum, 2026 plans sold in Allegheny", 14, SUB))
+    b.append(t(640, 414, "County, vs. $2,000 in emergency money.", 14, SUB))
+    b.append(t(640, 460, f"About 1 in 2 adults under 35 couldn't raise $2,000", 17, INK, "bold"))
+    b.append(t(640, 484, f"within a month ({cant['18-24']:.0f}% aged 18-24, {cant['25-34']:.0f}% aged 25-34).", 17, INK))
+    b.append(t(640, 520, "Show them: the worst case, before anything else.", 16, HI, "bold"))
+    b.append(source(H, "MEPS 2023 x 72 CMS 2026 plans in Allegheny County (simplified cost model); FINRA Foundation NFCS 2024, weighted."))
+    save("fig4_who_needs_what.svg", W, H, b)
 
 
-# ---------------------------------------------------------------- Figure 6: AFTER
-def after_panel(b, x, y, scale=1.0):
-    pass
+# ---------------------------------------------------------------- Figure 5: evidence that numbers help
+def fig5():
+    W, H = 1100, 600
+    b = header("Showing people what they'd pay halves the wrong choices",
+               "Share who chose a plan that was worse for them in every case, by what they were shown")
+    rows = [("Plan table only", 50, PALE, "50%"),
+            ("Table + expected yearly cost", 35, "#93b4dc", "about 35%"),
+            ("Table + range of possible yearly costs", 24, A, "24%")]
+    x0 = 400
+    for k, (lab, v, col, vl) in enumerate(rows):
+        y = 150 + k * 80
+        b.append(t(x0 - 15, y + 34, lab, 16, INK, "normal", "end"))
+        b.append(r(x0, y + 12, v * 11, 40, col, 4))
+        b.append(t(x0 + v * 11 + 12, y + 39, vl, 18, A if k == 2 else SUB, "bold"))
+    b.append(t(60, 430, "A single average helps; showing the whole range helps about twice as much.", 17, INK, "bold"))
+    b.append(t(60, 458, "What this study measured: choosing the right plan. What it didn't: whether people feel moved to act.", 16, SUB))
+    b.append(t(60, 482, "That second part, the words around the numbers, is what this project's interviews test.", 16, SUB))
+    b.append(source(H, "Samek & Sydnor (2020), NBER Working Paper 28003; online experiment, 692 U.S. adults. 'About 35%' is derived from reported effects."))
+    save("fig5_evidence.svg", W, H, b)
 
 
+# ---------------------------------------------------------------- Figure 6: three versions
 def fig6():
-    W, H = 1100, 680
-    b = header("What would someone like you actually pay?",
-               "The same two plans, shown as yearly totals for people aged 22-30 instead of a table of terms")
-    b.append(r(60, 108, 14, 14, A)); b.append(t(82, 120, f"Plan A ({PA.metal_level})", 14, INK))
-    b.append(r(230, 108, 14, 14, B)); b.append(t(252, 120, f"Plan B ({PB.metal_level})", 14, INK))
-    x0, x1, yt, yb = 140, 640, 185, 500
-    sc = lambda v: (yb - yt) * v / 12000
-    for v in range(0, 12001, 3000):
-        b.append(ln(x0, yb - sc(v), x1, yb - sc(v), GRID if v else "#9ca3af", 1))
-        b.append(t(x0 - 10, yb - sc(v) + 5, f"${v//1000}k" if v else "$0", 13, SUB, "normal", "end"))
-    b.append(t(30, (yt + yb) / 2, "What you pay for the year (premiums + medical bills)", 14, SUB, "normal", "middle", rotate=-90))
-    groups = [("Typical year", "the middle person", S("a_total_typical_p50"), S("b_total_typical_p50")),
-              ("Bad year", "the costliest 1 in 10", S("a_total_bad_p90"), S("b_total_bad_p90"))]
-    for i, (g, gs, va, vb) in enumerate(groups):
-        x = x0 + 60 + i * 230
-        for j, (v, col) in enumerate([(va, A), (vb, B)]):
-            bx = x + j * 78
-            b.append(r(bx, yb - sc(v), 70, sc(v), col))
-            b.append(t(bx + 35, yb - sc(v) - 9, money(v), 15, col, "bold", "middle"))
-        b.append(t(x + 74, yb + 28, g, 16, INK, "bold", "middle"))
-        b.append(t(x + 74, yb + 48, gs, 13, SUB, "normal", "middle"))
-    b.append(t((x0 + x1) / 2, yb + 82, "Two kinds of year for a person in their 20s", 14, SUB, "normal", "middle"))
-    ka = round(S("share_a_cheaper_pct"))
-    b.append(ln(700, 150, 700, 560, GRID, 1))
-    b.append(t(745, 200, "Out of 100 people aged 22-30,", 18, INK))
-    b.append(t(745, 226, "Plan A would have been cheaper for", 18, INK))
-    b.append(t(745, 300, ka, 72, A, "bold"))
-    b.append(t(745, 334, "of them", 18, INK))
-    for k in range(100):
-        b.append(f'<circle cx="{752 + (k % 20) * 15}" cy="{372 + (k // 20) * 18}" r="5.5" fill="{A if k < ka else B}"/>')
-    b.append(f'<circle cx="752" cy="482" r="5.5" fill="{A}"/>')
-    b.append(t(764, 487, "= 1 person who'd pay less with Plan A", 13, SUB))
-    b.append(f'<circle cx="752" cy="504" r="5.5" fill="{B}"/>')
-    b.append(t(764, 509, "= 1 person who'd pay less with Plan B", 13, SUB))
-    b.append(t(745, 545, f"Worst case: Plan A {money(S('a_worst_case'))}, Plan B {money(S('b_worst_case'))}", 14, INK, "bold"))
-    b.append(source(H, SRC_PLANS + "; MEPS 2023, ages 22-30, weighted. Simplified cost model; copays not included."))
-    save("fig6_after_what_you_pay.svg", W, H, b)
-
-
-# ---------------------------------------------------------------- Figure 7: before vs after
-def fig7():
-    W, H = 1200, 640
-    b = header("Same plans, same data. Which page helps someone choose?",
-               "Before: the terms of each plan. After: the numbers that answer the user's real question.")
-    # BEFORE
-    b.append(t(60, 140, "BEFORE", 14, SUB, "bold"))
-    b.append(r(60, 150, 520, 400, "white", 10, GRID, 1.5))
-    plan_table(b, 75, 170, 490, compact=True)
-    b.append(t(80, 470, "The user has to do the math:", 15, INK, "bold"))
-    b.append(t(80, 494, "deductibles, coinsurance and an unknown year.", 15, SUB))
-    b.append(t(80, 520, "Most people can't (Figure 3).", 15, SUB))
-    # arrow
-    b.append(f'<path d="M598 350 L630 350 M620 340 L632 350 L620 360" fill="none" stroke="{NOTE}" stroke-width="3"/>')
-    # AFTER
-    b.append(t(650, 140, "AFTER", 14, HI, "bold"))
-    b.append(r(650, 150, 490, 400, "white", 10, HI, 2))
-    b.append(t(670, 185, "For people your age (22-30), each year:", 15, INK, "bold"))
+    W, H = 1500, 760
+    b = header("Same plans, three pages: terms, numbers, or numbers with words",
+               "Which page helps someone choose, and which makes them want to act?")
+    cols = [("1  TERMS (today)", SUB), ("2  NUMBERS", A), ("3  NUMBERS + WORDS", HI)]
+    cw, gap, top = 440, 30, 130
+    for k, (lab, col) in enumerate(cols):
+        x = 60 + k * (cw + gap)
+        b.append(t(x, top, lab, 15, col, "bold"))
+        b.append(r(x, top + 12, cw, 500, "white", 10, col if k else GRID, 2 if k else 1.5))
+    # column 1: the table
+    plan_table(b, 72, top + 30, cw - 24, compact=True)
+    b.append(t(80, top + 330, "Every term is there.", 15, INK, "bold"))
+    b.append(t(80, top + 354, "The user still has to do the math.", 15, SUB))
+    # column 2: numbers only
+    x2 = 60 + cw + gap
+    b.append(t(x2 + 20, top + 50, "For people aged 22-30, each year:", 14, INK, "bold"))
     cards = [("Typical year", S("a_total_typical_p50"), S("b_total_typical_p50")),
              ("Bad year (1 in 10)", S("a_total_bad_p90"), S("b_total_bad_p90")),
              ("Worst case", S("a_worst_case"), S("b_worst_case"))]
     for i, (lab, va, vb) in enumerate(cards):
-        y = 205 + i * 78
-        b.append(r(670, y, 450, 64, "#f9fafb", 8))
-        b.append(t(686, y + 38, lab, 15, INK))
-        b.append(t(925, y + 30, "Plan A", 12, A, "bold", "middle"))
-        b.append(t(925, y + 52, money(va), 18, A, "bold", "middle"))
-        b.append(t(1050, y + 30, "Plan B", 12, B, "bold", "middle"))
-        b.append(t(1050, y + 52, money(vb), 18, B, "bold", "middle"))
+        y = top + 70 + i * 72
+        b.append(r(x2 + 16, y, cw - 32, 60, "#f9fafb", 8))
+        b.append(t(x2 + 30, y + 36, lab, 14, INK))
+        b.append(t(x2 + 255, y + 26, "Plan A", 11, A, "bold", "middle"))
+        b.append(t(x2 + 255, y + 48, money(va), 17, A, "bold", "middle"))
+        b.append(t(x2 + 360, y + 26, "Plan B", 11, B, "bold", "middle"))
+        b.append(t(x2 + 360, y + 48, money(vb), 17, B, "bold", "middle"))
     ka = round(S("share_a_cheaper_pct"))
-    b.append(t(670, 470, f"Plan A is cheaper for {ka} of 100 people your age.", 15, INK, "bold"))
-    b.append(t(670, 494, f"If you expect more than {money(S('break_even_medical_bills'))} in medical", 15, SUB))
-    b.append(t(670, 518, "bills this year, Plan B is likely cheaper.", 15, SUB))
-    b.append(t(60, 588, "Design takeaway: lead with the number that's about the user (relevance), show the range (uncertainty), and say who each plan fits (decision impact).", 14, INK))
-    b.append(source(H, SRC_PLANS + "; MEPS 2023, ages 22-30, weighted. Draft mockup; simplified cost model."))
-    save("fig7_before_after.svg", W, H, b)
+    b.append(t(x2 + 20, top + 315, f"Plan A is cheaper for {ka} of 100 people your age.", 14, INK, "bold"))
+    # column 3: numbers + words
+    x3 = 60 + 2 * (cw + gap)
+    save_a = S("b_total_typical_p50") - S("a_total_typical_p50")
+    save_b = S("a_total_bad_p90") - S("b_total_bad_p90")
+    lines = [
+        ("If you see a doctor once or twice a year", INK, "bold", 15),
+        (f"Plan A likely saves you about {money(round(save_a, -2))} a year.", A, "bold", 15),
+        (f"{ka} of 100 people your age come out ahead with it.", SUB, "normal", 14),
+        ("", INK, "normal", 8),
+        (f"If you expect more than {money(S('break_even_medical_bills'))} in medical bills", INK, "bold", 15),
+        ("(ongoing visits, a planned procedure)", SUB, "normal", 14),
+        (f"Plan B costs about {money(round(save_b, -2))} less in a bad year.", B, "bold", 15),
+        ("", INK, "normal", 8),
+        ("Not sure which group you're in?", INK, "bold", 15),
+        ("Count last year's doctor visits. It's a good first clue.", SUB, "normal", 14),
+        ("", INK, "normal", 8),
+        ("Bad years are rare, but they're the year", INK, "normal", 15),
+        ("insurance is for.", INK, "normal", 15),
+    ]
+    y = top + 52
+    for txt, col, wgt, sz in lines:
+        if txt:
+            b.append(t(x3 + 20, y, txt, sz, col, wgt))
+        y += sz + 11
+    b.append(r(x3 + 20, top + 440, cw - 40, 44, HI, 8))
+    b.append(t(x3 + cw / 2, top + 468, "Estimate my year in 2 minutes", 15, "white", "bold", "middle"))
+    b.append(t(60, top + 550, "Evidence so far: numbers (2) help people choose correctly (Figure 5). Whether words (3) make people more willing to act is the hypothesis my interviews test.", 14, INK))
+    b.append(source(H, SRC_PLANS + "; MEPS 2023, ages 22-30, weighted. Draft mockups; simplified cost model."))
+    save("fig6_three_versions.svg", W, H, b)
+
+
+# ---------------------------------------------------------------- Figure 7: checklist (CTA)
+def fig7():
+    W, H = 1100, 560
+    b = header("Before you design a comparison page, ask four questions",
+               "Call to action for product teams, with where each one shows up in version 3")
+    items = [("1", "Is this number about this user?", "Relevance", "\"people your age\", \"if you see a doctor once or twice a year\""),
+             ("2", "Does it show the range, not just one guess?", "Uncertainty", "typical year, bad year and worst case"),
+             ("3", "Would it change their choice?", "Decision impact", "the break-even point that splits the two groups"),
+             ("4", "Does a sentence say what it means for their life?", "Motivation", "\"bad years are rare, but they're the year insurance is for\"")]
+    for k, (num, q, tag, ex) in enumerate(items):
+        y = 130 + k * 92
+        b.append(f'<circle cx="84" cy="{y + 30}" r="22" fill="{HI if k == 3 else A}"/>')
+        b.append(t(84, y + 37, num, 20, "white", "bold", "middle"))
+        b.append(t(125, y + 26, q, 19, INK, "bold"))
+        b.append(t(125, y + 52, f"{tag}: {ex}", 15, SUB))
+    b.append(t(60, 510, "Then test it: A/B test the old page against the new one on comprehension, choice quality and trust, not just clicks.", 15, INK, "bold"))
+    b.append(source(H, "Questions 1-3 draw on Samek & Sydnor (2020); question 4 is this project's hypothesis."))
+    save("fig7_checklist.svg", W, H, b)
 
 
 for f in (fig1, fig2, fig3, fig4, fig5, fig6, fig7):

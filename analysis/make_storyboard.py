@@ -17,23 +17,23 @@ frames = [
     ("2  TRY IT", "Pick a plan from the table",
      "fig1_before_plan_table", "The reader sees the plan table most pages use and makes a choice.",
      "Every number is there; the answer isn't."),
-    ("3  REVEAL", "The right answer depends on your year",
-     "fig2_cost_curves", "Below $2,633 in bills, Plan A wins; above it, Plan B. 70 of 100 people in their 20s fall below.",
-     "The table never told them this."),
+    ("3  REVEAL", "70 of 100 should pick Plan A. Which group are you in?",
+     "fig2_cost_curves", "Below $2,633 in bills Plan A wins; above it Plan B. The table can't tell a user which side they're on.",
+     "This is the turning point of the story."),
     ("4  WHY IT'S HARD", "It's not just you",
      "fig3_research", "Only 14% understand the four basic terms; 61% of employees chose a worse plan.",
      "Users can't do the math the table asks of them."),
-    ("5  ONE NUMBER ISN'T ENOUGH", "The premium works for most, but not all",
-     "fig4_cheapest_premium", "If everyone picks the lowest premium, 27 of 100 pay $1,000+ more.",
-     "Different users need different numbers."),
-    ("6  WHO NEEDS WHAT", "Can they cover the worst case?",
-     "fig5_worst_case", "Half of adults under 35 can't raise $2,000; a typical plan's worst case is $10,600.",
-     "For them, the worst case comes first."),
-    ("7  REDESIGN", "Show what someone like you would pay",
-     "fig6_after_what_you_pay", "Typical year, bad year, and who each plan fits, for people aged 22-30.",
-     "Relevance, uncertainty, decision impact."),
-    ("8  BEFORE / AFTER + CTA", "Same data, a page that helps people choose",
-     "fig7_before_after", "Side by side. Call to action for product teams: lead with the user's number, then A/B test it.",
+    ("5  WHO NEEDS WHAT", "Different people need a different number first",
+     "fig4_who_needs_what", "Frequent users need their yearly total (27 of 100 overpay $1,000+); people with little saved need the worst case.",
+     "One table can't serve both."),
+    ("6  EVIDENCE", "Showing what people would pay halves wrong choices",
+     "fig5_evidence", "In an experiment, wrong choices fell from 50% (table) to 24% (range of yearly costs).",
+     "Numbers help people choose. Do words help them act?"),
+    ("7  THREE VERSIONS", "Terms, numbers, or numbers with words",
+     "fig6_three_versions", "The same two plans as three pages. Version 3 adds plain sentences about what the numbers mean.",
+     "The words are the hypothesis my interviews test."),
+    ("8  CALL TO ACTION", "Four questions before you design a comparison page",
+     "fig7_checklist", "Relevance, uncertainty, decision impact, motivation. Then A/B test the new page.",
      "Ends with sources and method notes."),
 ]
 
@@ -53,11 +53,11 @@ for i, (tag, head, fig, body, punch) in enumerate(frames):
     y = 270 + row * (FH + GAP)
     d.rounded_rectangle([x, y, x + FW, y + FH], 16, outline=LINE, width=3, fill="white")
     d.text((x + 36, y + 30), tag, font=font(32, True), fill=ORANGE if i == 7 else BLUE)
-    yy = y + 80
-    for ln in textwrap.wrap(head, 45):
+    yy = y + 76
+    for ln in textwrap.wrap(head, 40):
         d.text((x + 36, yy), ln, font=font(46, True), fill=INK)
         yy += 56
-    box = [x + 36, y + 160, x + FW - 36, y + 790]
+    box = [x + 36, y + 196, x + FW - 36, y + 790]
     d.rounded_rectangle(box, 10, fill=(249, 250, 251))
     if fig:
         im = Image.open(f"figures/png/{fig}.png").convert("RGB")
