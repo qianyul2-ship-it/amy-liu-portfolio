@@ -25,8 +25,8 @@ I'll add and update my class assignments here throughout the semester.
 [Critique by Design](critique-by-design.md)
 
 ### Final Project
-- [Part I](final-project-part-one)
-- [Part II](final-project-part-two)
+- [Part I](final-project-part-one.md)
+- [Part II](final-project-part-two.md)
 - [Part III](final-project-part-three)
 
 ## AI Acknowledgements
