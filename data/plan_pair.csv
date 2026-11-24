@@ -1,0 +1,3 @@
+label,plan_name,metal_level,plan_type,monthly_premium,deductible_individual,coinsurance_pct,oop_max_individual
+A,"UPMC Advantage Bronze $6,700/$0 - Partner Network",Bronze,EPO,246.76,6700.0,40.0,10600
+B,"UPMC Advantage Gold $1,000/$20 - Partner Network",Gold,EPO,342.01,1000.0,30.0,7500

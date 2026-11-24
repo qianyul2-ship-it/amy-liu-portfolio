@@ -11,9 +11,12 @@ All files here are extracts of public datasets, keeping only the variables this 
 | `cms_pa_2026_service_areas.csv` | Which counties each issuer's service area covers (to find plans sold in Allegheny County) | 1,175 | Figures 1, 5 |
 | `fig3_overpay_by_premium_rule.csv` | Output for Figure 3: share of people aged 22–30 by how much more they'd pay with the lowest-premium plan | 6 | Figure 3 |
 | `fig4_worst_case_vs_cushion.csv` | Output for Figure 4: share who can't raise $2,000 by age; median out-of-pocket maximum by metal level | 11 | Figure 4 |
+| `plan_pair.csv` | The two plans used in the story (Plan A Bronze, Plan B Gold): premium, deductible, coinsurance, out-of-pocket maximum | 2 | Part II Figures 1, 2, 6, 7 |
+| `plan_pair_cost_curve.csv` | Yearly total for each plan at medical bills from $0 to $40,000 | 161 | Part II Figure 2 |
+| `plan_pair_summary.csv` | Break-even point, spending percentiles, typical/bad-year totals, share for whom each plan is cheaper | 14 | Part II Figures 2, 6, 7 |
 | `nfcs_2024_extract.csv` | 2024 National Financial Capability Study respondents | 25,539 | Figure 4 |
 
-The output files are produced by [`analysis/fig3_fig4.py`](../analysis/fig3_fig4.py); run it from the repository root.
+The output files are produced by [`analysis/fig3_fig4.py`](../analysis/fig3_fig4.py) and [`analysis/fig_plan_pair.py`](../analysis/fig_plan_pair.py); run them from the repository root.
 
 ## Sources
 

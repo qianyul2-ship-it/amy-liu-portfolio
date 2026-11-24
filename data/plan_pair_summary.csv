@@ -1,0 +1,15 @@
+,value
+break_even_medical_bills,2633.0
+spend_p50,762.0
+spend_p75,3372.0
+spend_p90,9090.0
+spend_p95,17523.0
+share_spend_above_break_even_pct,29.5
+a_total_typical_p50,3723.0
+b_total_typical_p50,4866.0
+a_total_bad_p90,10617.0
+b_total_bad_p90,7531.0
+a_worst_case,13561.0
+b_worst_case,11604.0
+share_a_cheaper_pct,70.5
+share_b_cheaper_pct,29.5
